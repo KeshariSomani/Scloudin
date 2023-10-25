@@ -34,6 +34,54 @@
       .nutino{
         font-family: 'Nunito';
       }
+              /* companies bannner */
+  logo-slider {
+    --image-size: 100px;
+    padding: 20px;
+    overflow: hidden;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+  }
+  logo-slider div {
+    display: flex;
+    position: relative;
+    animation: marquee 15s linear infinite;
+    justify-content: space-around;
+  }
+  logo-slider img {
+    display: block;
+    min-width: var(--image-size);
+    height: var(--image-size);
+    margin: 0 1vw;
+  }
+  logo-slider:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to right, white, rgba(255, 255, 255, 0) 80px, rgba(255, 255, 255, 0) calc(100% - 80px), white);
+  }
+  @media (max-width: 900px) {
+    logo-slider {
+      --image-size: 50px;
+      --image-size: min(max(50px, 10vw), 100px);
+    }
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
 </style>
 <body>
 
@@ -222,6 +270,283 @@
     </div>
    </div><!--bg end why choose us-->
    
+<!--Section 10-->  
+    <div class="mx-8 mt-12">
+      <p class="text-[#9747FF] text-lg font-semibold">What do we do</p>
+      <p class="text-[#0B1C98] text-5xl about mt-2">Our Technology </p>
+  
+      <p class="text-[#37454D] text-xl text-justify mt-4"> We understand that each project  and each client is unique with their own specific requirements . Based on our knowledge nd experience , we select the most suitable technology for the software solution you are looking for. </p>
+    </div>
+
+<!--Section 11-->
+<div class=" lg:flex flex-row-reverse justify-between  md:pl-5 h-full w-full">
+  <div class="mx-8 mt-8 lg:mt-0">
+      <img src="images/Home_Sec11_Circular_Card1.svg" alt=" image"
+    class="h-full w-[90%]  md:mx-0 md:h-96 md:w-full  lg:h-[30rem] lg:w-[30rem]"/>
+  </div>
+  <div class="mx-auto pt-4 px-8 lg:px-8 lg:ml-24 h-48 w-full lg:w-[40%] rounded-lg shadow-lg bg-white my-12 lg:mt-48">
+       <div class="flex mx-2">
+           <div class="h-12 w-12 rounded-lg bg-[#9CEDA4] flex items-center ">
+            <img src="images/Home_Sec11_Card1.svg" alt="" class="mx-auto">
+          </div>
+          <p class="text-[#9747FF] text-xl font-bold mx-4">Website <br> Development</p>
+        </div>  
+          
+          <div class="text-[#210746] mx-4 text-justify mt-4">Java , Go - Lang , PHP , Node.js , Bootstrap , Angular , JS , HTML , CSS3 , .NET , Web REST API , Perl, Python.</div>
+  </div>
+</div>  
+             <!--sec 11  card 2--> 
+             <div class=" lg:flex flex-row justify-between  md:pl-5 h-auto w-full mt-0">
+              <div class="mx-24  lg:mt-0">
+                <img src="images/Home_Sec11_Circular_Card2.svg" alt="About us image"
+              class="h-full w-[90%]  md:mx-0 md:h-96 md:w-full  lg:h-[30rem] lg:w-[30rem]"/>
+            </div>
+              <div class="mx-auto pt-4 px-8 lg:px-8 lg:ml-24 h-48 w-full lg:w-[40%] rounded-lg shadow-lg bg-white mt-12 lg:mt-36">
+                   <div class="flex mx-2">
+                       <div class="h-12 w-12 rounded-lg bg-[#EDA69C] flex items-center ">
+                        <img src="images/Home_Sec11_Card2.svg" alt="" class="mx-auto">
+                      </div>
+                      <p class="text-[#9747FF] text-xl font-bold mx-4">Mobile App <br> Development</p>
+                    </div>  
+                      
+                      <div class="text-[#210746] mx-4 text-justify mt-4">Flutter, Dart, Android native application , Phone, Tablet ,TV, iPhone, iPad. Hybrid App , IOS native application , Hybrid native application</div>
+              </div>
+              
+            </div>   
+            <!--Section card 3-->
+            <div class=" lg:flex flex-row-reverse justify-between  md:pl-5 h-full w-full">
+              <div class="mx-8 mt-8 lg:mt-0">
+                  <img src="images/Home_Sec11_Circular_Card3.svg" alt=" image"
+                class="h-full w-[90%]  md:mx-0 md:h-96 md:w-full  lg:h-[30rem] lg:w-[30rem]"/>
+              </div>
+              <div class="mx-auto pt-4 px-8 lg:px-8 lg:ml-24 h-48 w-full lg:w-[40%] rounded-lg shadow-lg bg-white my-12 lg:mt-48">
+                   <div class="flex mx-2">
+                       <div class="h-12 w-12 rounded-lg bg-[#9CEDA4] flex items-center ">
+                        <img src="images/Home_Sec11_Card3.svg" alt="" class="mx-auto">
+                      </div>
+                      <p class="text-[#9747FF] text-xl font-bold mx-4">ERP & CMS <br> Development</p>
+                    </div>  
+                      
+                      <div class="text-[#210746] mx-4 text-justify mt-4">Java , Go - Lang , PHP , Node.js , Bootstrap , Angular , JS , HTML , CSS3 , .NET , Web REST API , Perl, Python.</div>
+              </div>
+            </div> 
+         <div class="mx-auto flex justify-center">
+           <button class="text-2xl bg-[#443D5E] text-white rounded-full px-4 py-2">View more</button>
+         </div>
+
+  <!--Section 12-->  
+      <div class="w-full h-56 mt-12 bg-[#EDEFF6] ">
+         <div class="flex justify-center pt-16"> 
+          <p class="text-2xl font-bold text-white bg-[#4A60A1] px-2 rounded-lg">Our</p>
+          <p class="text-2xl font-bold text-[#2C2738]">Products</p>
+         </div>
+         <p class="mx-4 text-[#889099] text-lg lg:text-xl flex justify-center mt-4">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat.</p>
+      </div>
+  <!--Section 13-->  
+  <div class="mx-12 mt-12">
+    <p class="text-[#242331] text-2xl font-semibold">Services</p>
+    <p class="text-[#0B1C98] text-3xl lg:text-5xl about mt-2">Solution areas </p>
+
+    <p class="text-[#37454D] text-lg lg:text-xl text-justify mt-4"> We understand that each client is unique with their own specific requirements . Based on our knowledge and experience , we select the most suitable technology for the software solution you are looking for.</p>
+    <button class="text-2xl bg-[#4A60A1] text-white rounded-full px-8 py-2 mt-4 flex">All Services <img src="images/Home_Sec13_Btn_Arrow.svg" alt="arrow" class="pt-2 mx-2"></button>
+  </div>
+
+  <!--Section 17-->
+  <div class="mx-12 mt-12">
+    <p class="text-[#242331] text-2xl font-semibold">Our Association</p>
+    <p class="text-[#0B1C98] text-3xl lg:text-5xl about mt-2">Partners </p>
+
+    <p class="text-[#37454D] text-lg lg:text-xl text-justify mt-4"> SCLOUDIN is a customer centric company focused on solving customer day to day problems and providing sustainable business solutions for their growth and suggest technology advantages. SCLOUDIN strongly believe that a strategic partnership is crucial to growth and success. We share similar values, common objectives, and shared goals with all our partners. SCLOUDIN partner ecosystem is driven by collaboration, knowledge sharing, and mutual growth opportunities with a common goal to ensure optimized customer satisfaction and business growth</p>
+
+  </div>
+
+   <!--Section  18-->
+  <section class=" mx-12 mt-8 hidden lg:block">
+    <div class="flex justify-between">
+       <div class="slide flex items-center">
+        <img src="images//Home_Sec18_Google.svg" class="h-8" alt="" />
+        </div>
+        <div class="slide flex items-center">
+          <img src="images/Home_Sec18_Microsoft.svg" class="h-8" alt="" />
+        </div>
+        <div class="slide flex items-center">
+          <img src="images/Home_Sec18_IBM.svg" class="h-8" alt="" />
+        </div>
+        <div class="slide flex items-center">
+          <img src="images/Home_Sec18_HP.svg" class="h-8" alt="" />
+        </div>
+        <div class="slide flex items-center">
+          <img src="images/Home_Sec18_AWS.svg"class="h-8" alt="" />
+        </div>
+        <div class="slide flex items-center">
+          <img src="images/Home_Sec18_ME.svg" class="h-8" alt="" />
+        </div>
+        <div class="slide flex items-center">
+          <img src="images/Home_Sec18_v.svg" class="h-8" alt="" />
+        </div>
+      </div> 
+  </section>
+
+  <div class=" w-[100%] h-auto  overflow-x-hidden block lg:hidden">
+   <section class="flex overflow-x-hidden items-center border p-10 my-[86.97px] sm:py-5 lg:px-24">
+    
+    <div>
+      <logo-slider>
+    
+        <div>
+          <div class="slide flex items-center">
+            <img src="images//Home_Sec18_Google.svg" class="h-16" alt="" />
+          </div>
+              
+              <div class="slide flex items-center">
+                <img src="images/Home_Sec18_Microsoft.svg" class="h-16" alt="" />
+              </div>
+              <div class="slide flex items-center">
+                <img src="images/Home_Sec18_IBM.svg" class="h-16" alt="" />
+              </div>
+              <div class="slide flex items-center">
+                <img src="images/Home_Sec18_HP.svg" class="h-16" alt="" />
+              </div>
+              <div class="slide flex items-center">
+                <img src="images/Home_Sec18_AWS.svg"class="h-16" alt="" />
+              </div>
+              <div class="slide flex items-center">
+                <img src="images/Home_Sec18_ME.svg" class="h-16" alt="" />
+              </div>
+              <div class="slide flex items-center">
+                <img src="images/Home_Sec18_v.svg" class="h-16" alt="" />
+              </div>
+              <div class="slide flex items-center">
+                <img src="images//Home_Sec18_Google.svg" class="h-16" alt="" />
+              </div>
+                  
+                  <div class="slide flex items-center">
+                    <img src="images/Home_Sec18_Microsoft.svg" class="h-16" alt="" />
+                  </div>
+                  <div class="slide flex items-center">
+                    <img src="images/Home_Sec18_IBM.svg" class="h-16" alt="" />
+                  </div>
+                  <div class="slide flex items-center">
+                    <img src="images/Home_Sec18_HP.svg" class="h-16" alt="" />
+                  </div>
+                  <div class="slide flex items-center">
+                    <img src="images/Home_Sec18_AWS.svg"class="h-16" alt="" />
+                  </div>
+                  <div class="slide flex items-center">
+                    <img src="images/Home_Sec18_ME.svg" class="h-16" alt="" />
+                  </div>
+                  <div class="slide flex items-center">
+                    <img src="images/Home_Sec18_v.svg" class="h-16" alt="" />
+                  </div>
+                  
+              
+         </div>
+      
+         
+      </logo-slider>
+    </div>
+  </section>
+</div>
+  
+ <!--Section 19-->
+ <div class="mx-12 mt-12">
+  <p class="text-[#0B1C98] text-3xl lg:text-5xl about mt-2">Clients </p>
+  <p class="text-[#797979] text-xl lg:text-xl text-justify mt-4">Few but not all connection and projects we are working in current state and delivered the top notch quality outcomes.</p>
+</div>
+
+<!--Section 20-->
+<div>
+  <p class="mt-8 text-[#242331] text-5xl md:text-7xl lg:text-7xl text-center font-extrabold nunito ">Get in touch today!</p>
+</div>
+<section class="lg:flex flex-row mx-4">
+   <div class=" flex pt-6  lg:px-8 lg:ml-24 h-24 w-full lg:w-[40%] rounded-2xl border shadow-lg bg-white my-8 lg:mt-12">
+         <img src="images/Home_Sec20_Mail_Icon.svg" alt="" class="h-12 mx-2">
+          <div class="flex justify-between mt-2">
+            <p class="text-[#1B2534] text-lg lg:text-xl font-bold mx-2 ">Mail Us</p>
+            <p class="text-[#797979] text-lg md:ml-32 lg:ml-32">contactus@sclodin.in</p>
+          </div>
+   </div>
+   
+   <div class=" flex pt-6 lg:mt-12 lg:px-8 lg:ml-24 h-24 w-full lg:w-[40%] rounded-2xl border shadow-lg bg-white my-8 ">
+    <img src="images/Home_Sec20_Call_Icon.svg" alt="" class="h-12 mx-2">
+     <div class="flex justify-between mt-2">
+       <p class="text-[#1B2534] text-lg lg:text-xl font-bold mx-2 ">Call Us</p>
+       <p class="text-[#797979] text-lg md:ml-32 lg:ml-44">+91 9342979716</p>
+     </div>
+</div>
+</section>  
+
+<!--Section 21-->
+<div class="mt-8 md:text-left flex justify-center mb-8 lg:mt-12 sm:mt-0 ">
+  <div class="h-auto w-full space-y-5 lg:mx-12 mb-4 bg-white border  pt-4 mx-4 rounded-2xl shadow px-4 " >
+      <form class=" "  method="post">
+        <div class="lg:flex flex-row justify-between">
+          <div>
+            <label for="name" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold"
+              >Full Name <b class="">*</b></label
+            >
+            <input
+              type="name"
+              name="name" placeholder="john david"
+              class=" text-black text-sm border border-[#D3D3D3] rounded-md block w-full lg:w-[35rem] p-2.5"
+              required
+            />
+          </div>
+
+          <div >
+              <label for="name" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold"
+                > Your Email <b class="">*</b></label
+              >
+              <input
+                type="email"
+                name="last name" placeholder="example@yourmail.com"
+                class=" text-black text-sm border border-[#D3D3D3] rounded-md block w-full lg:w-[35rem] p-2.5"
+                required
+              />
+            </div>
+          </div>
+          
+          <div class="lg:flex flex-row justify-between">
+            <div>
+              <label for="name" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold"
+                >Company <b class="">*</b></label
+              >
+              <input
+                type="name"
+                name="name" placeholder="yourcompany name here"
+                class=" text-black text-sm border border-[#D3D3D3] rounded-md block w-full lg:w-[35rem] p-2.5"
+                required
+              />
+            </div>
+  
+            <div >
+                <label for="name" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold"
+                  >Subject <b class="">*</b></label
+                >
+                <input
+                  type="email"
+                  name="last name" placeholder="how can we help"
+                  class=" text-black text-sm border border-[#D3D3D3] rounded-md block w-full lg:w-[35rem] p-2.5"
+                  required
+                />
+              </div>
+            </div>
+         
+            <div>
+              <label for="email" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold"
+                >Message <b>*</b></label >
+             <textarea name="message"  class="h-36 text-black text-sm border border-[#D3D3D3] shadow-lg rounded-md block w-full p-2.5" placeholder="hello there,i would like to talk about how to..."></textarea>
+            
+            </div>
+             <div class="mt-4 flex justify-center">
+                  <button class="bg-[#242331] text-white text-2xl font-semibold px-12 py-4  rounded-full mt-8 mb-[-1.5rem]">Send Message</button>
+              </div>
+          
+        </form>
+  </div>
+</div>
+
 
 </body>
 </html>
+
