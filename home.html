@@ -8,11 +8,59 @@
     <link href='https://fonts.googleapis.com/css?family=MuseoModerno' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@800&display=swap" rel="stylesheet">
+
     <!--tailwind cdn link-->
     <script src="https://cdn.tailwindcss.com"></script>
     
 </head>
 <style>
+    .testfont_{
+      font-family: 'Inter';
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+    }
+
+    .testfont1{
+      font-family: 'Inter';
+      font-size: 14px;
+      font-weight: 700px;
+      line-height: 22px;
+    }
+
+    /* navbar styling */
+
+    .navbar {
+            
+            overflow: hidden;
+        }
+        
+        .navbar .company-name {
+            float: left;
+            padding: 10px 20px;
+            color: #9747FF;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        
+        
+        .navbar .nav-links {
+            float: right;
+            padding: 10px 20px;
+        }
+        
+        
+        .navbar .nav-links a {
+            color: #9747FF;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+    /* navbar styling */
+
     .section1 {
         position: relative;
         text-align: center;
@@ -84,6 +132,51 @@
   
 </style>
 <body>
+
+<!-- header section -->
+<!-- header top -->
+<div class=" bg-[#0B1C98] text-white h-[61px] px-4 flex justify-between"> 
+  <div class="flex items-center gap-2">
+    <span>
+      <img src="icons/EnvelopeOpen.svg" alt="main" class="">
+    </span>
+    <p >Email us at : contactus@SCLOUDIN.in</p>
+  </div>
+
+
+  <div class="flex items-center gap-7 pr-5"> 
+    <img src="icons/Vector.svg" alt="main" class="">
+    <img src="icons/Vector (1).svg" alt="main" class="">
+    <img src="icons/Vector (2).svg" alt="main" class="">
+     <p class="h-[39px] w-[1px] bg-white "></p>
+     <img src="icons/Phone.svg" alt="main" class="">
+     <p class="testfont_">9843078205</p>
+  </div>
+</div>
+
+<!-- header bottom -->
+
+<div class="bg-[#fff] h-[6.8rem] w-full flex items-center ">
+  
+  <div class="navbar flex items-center gap-10 ">
+    <a class="company-name" href="#"><img src="images/3 1.svg" alt="main" class=""></a>
+    <div class="nav-links flex gap-6 uppercase ml-24 ">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">why scloudin</a>
+        <a href="#">technology</a>
+        <a href="#">Products</a>
+        <a href="#">services</a>
+        <a href="#">careers</a>
+        <a href="#">contact us</a>
+        <a href="#">blogs</a>
+
+    </div>
+</div>
+
+</div>
+<!-- header section -->
+
 
  <!--Section 1-->   
     <div class="section1">
@@ -526,7 +619,8 @@
             >
             <input
               type="name"
-              name="name" placeholder="john david"
+              name="name" 
+              placeholder="john david"
               class=" text-black text-sm border border-[#D3D3D3] rounded-md block w-full lg:w-[35rem] p-2.5"
               required
             />
