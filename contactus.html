@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home_Scloudin</title>
+    <title>Contact_Scloudin</title>
     <!--Font Link -->
     <link href='https://fonts.googleapis.com/css?family=MuseoModerno' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -13,7 +13,9 @@
     <!--tailwind cdn link-->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
+<style>
+   
+</style>
 <body>
     <main>
         <!-- Banner section  -->
@@ -21,105 +23,113 @@
             style="background-image: url(./images/contactusPage_1_Rectangle\ 28.png);">
         </section>
         <!-- contact us Section -->
-        <section class="my-[8rem] min-h-screen md:px-[5vw] px-7 font-Nunito">
-            <p
-                class="mt-8 text-[#242331] text-[2rem] md:text-5xl md:text-7xl lg:text-7xl text-center font-extrabold nunito ">
-                Get in
-                touch
-                today!</p>
-            <div class="lg:flex flex-row md:mx-4">
-                <div
-                    class=" flex lg:px-8 lg:ml-24 h-24 w-full lg:w-[40%] rounded-2xl  justify-center  items-center shadow-lg bg-white my-8 lg:mt-12">
-                    <img src="images/Home_Sec20_Mail_Icon.svg" alt="" class="md:h-12 h-[3rem] mx-2">
-                    <div class="flex justify-between  items-center">
-                        <p class="text-[#1B2534] text-[1.2rem] lg:text-xl font-bold mx-2 ">Mail Us</p>
-                        <p class="text-[#797979]  text-sm md:text-lg md:ml-32 lg:ml-32">contactus@sclodin.in</p>
-                    </div>
-                </div>
-
-                <div
-                    class=" flex justify-center md:justify-between items-center lg:mt-12  lg:px-8 lg:ml-24 h-24 w-full lg:w-[40%] rounded-2xl border shadow-lg bg-white  ">
-                    <div class="flex justify-between items-center">
-                        <img src="images/Home_Sec20_Call_Icon.svg" alt="" class="md:h-12 h-[3rem] mx-2">
-                        <p class="text-[#1B2534] text-[1.2rem] md:text-lg lg:text-xl font-bold mx-2 ">Call Us</p>
-                    </div>
-
-                    <p class="text-[#797979]text-sm md:text-lg">+91 9342979716</p>
-
-                </div>
+<!--Section 2-->
+   <div>
+    <p class="mt-8 text-[#242331] text-5xl md:text-7xl lg:text-7xl text-center font-extrabold font-nunito ">Get in touch today!</p>
+  </div>
+  <section class="lg:flex flex-row mx-4">
+     <div class=" flex pt-6  lg:px-8 lg:ml-24 h-24 w-full lg:w-[40%] rounded-2xl border shadow-lg bg-white my-8 lg:mt-12">
+           <img src="images/Home_Sec20_Mail_Icon.svg" alt="" class="h-12 mx-2">
+            <div class="flex justify-between mt-2">
+              <p class="text-[#1B2534] text-lg lg:text-xl font-bold mx-2 ">Mail Us</p>
+              <p class="text-[#797979] text-lg md:ml-32 lg:ml-32">contactus@sclodin.in</p>
             </div>
-            <!--Section 21-->
-            <div
-                class="mt-8 md:text-leftpx-12 rounded-[1.5rem] md:rounded-[2.5rem] md:min-h-[80vh] border-gray-900 border-[2px] flex justify-center mb-8 lg:mt-12 sm:mt-0 ">
-                <form
-                    class=" w-full py-[4rem]  relative flex flex-col justify-center items-center  md:px-12 flex flex-col justify-center gap-[1rem]"
-                    method="post">
-                    <div class="flex  flex-col  gap-[.5rem] md:flex-row w-full px-4 justify-between">
-                        <div class="flex flex-col gap-[1rem] items-start justify-start">
-                            <label for="name" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold">Full Name <b
-                                    class="">*</b></label>
-                            <input type="name" name="name" placeholder="john david"
-                                class=" text-black text-sm border border-[#D3D3D3] rounded-md block w-full lg:w-[35rem] p-2.5"
-                                required />
-                        </div>
-
-                        <div class="flex flex-col gap-[1rem] items-start justify-start">
-                            <label for="name" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold"> Your Email
-                                <b class="">*</b></label>
-                            <input type="email" name="last name" placeholder="example@yourmail.com"
-                                class=" text-black text-sm border border-[#D3D3D3] rounded-md block w-full lg:w-[35rem] p-2.5"
-                                required />
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col   md:flex-row justify-between px-4 w-full">
-                        <div class="flex flex-col gap-[1rem] items-start justify-start">
-                            <label for="name" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold">Company <b
-                                    class="">*</b></label>
-                            <input type="name" name="name" placeholder="yourcompany name here"
-                                class=" text-black text-sm border border-[#D3D3D3] rounded-md block w-full lg:w-[35rem] p-2.5"
-                                required />
-                        </div>
-
-                        <div class="flex flex-col gap-[1rem] items-start justify-start">
-                            <label for="name" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold">Subject <b
-                                    class="">*</b></label>
-                            <input type="email" name="last name" placeholder="how can we help"
-                                class=" text-black text-sm border border-[#D3D3D3] rounded-md block w-full lg:w-[35rem] p-2.5"
-                                required />
-                        </div>
-                    </div>
-
-                    <div class="flex w-[80%] md:w-full flex-col gap-[1rem] items-start justify-start">
-                        <label for="email" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold">Message
-                            <b>*</b></label>
-                        <textarea name="message"
-                            class="h-36 text-black text-sm border border-[#D3D3D3] shadow-lg rounded-md block w-full p-2.5"
-                            placeholder="hello there,i would like to talk about how to..."></textarea>
-
-                    </div>
-
-                    <button
-                        class="bg-[#242331] absolute md:-bottom-[8%] md:left-[45%] -bottom-[4%]  text-white text-[.8rem] md:text-2xl font-semibold px-12 py-[1.58rem] w-fit   rounded-full  ">Send
-                        Message
-                    </button>
-                </form>
+     </div>
+     
+     <div class=" flex pt-6 lg:mt-12 lg:px-8 lg:ml-24 h-24 w-full lg:w-[40%] rounded-2xl border shadow-lg bg-white my-8 ">
+      <img src="images/Home_Sec20_Call_Icon.svg" alt="" class="h-12 mx-2">
+       <div class="flex justify-between mt-2">
+         <p class="text-[#1B2534] text-lg lg:text-xl font-bold mx-2 ">Call Us</p>
+         <p class="text-[#797979] text-lg md:ml-32 lg:ml-44">+91 9342979716</p>
+       </div>
+  </div>
+  </section>  
+  
+  <!--Section 3-->
+  <div class="mt-8 md:text-left flex justify-center mb-8 lg:mt-12 sm:mt-0 ">
+    <div class="h-auto w-full space-y-5 lg:mx-12 mb-4 bg-white border  pt-4 mx-4 rounded-2xl shadow px-4 " >
+        <form class=" "  method="post">
+          <div class="lg:flex flex-row justify-between">
+            <div>
+              <label for="name" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold"
+                >Full Name <b class="">*</b></label
+              >
+              <input
+                type="name"
+                name="name" 
+                placeholder="john david"
+                class=" text-black text-sm border border-[#D3D3D3] rounded-md block w-full lg:w-[35rem] p-2.5"
+                required
+              />
             </div>
-        </section>
+  
+            <div >
+                <label for="name" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold"
+                  > Your Email <b class="">*</b></label
+                >
+                <input
+                  type="email"
+                  name="last name" placeholder="example@yourmail.com"
+                  class=" text-black text-sm border border-[#D3D3D3] rounded-md block w-full lg:w-[35rem] p-2.5"
+                  required
+                />
+              </div>
+            </div>
+            
+            <div class="lg:flex flex-row justify-between">
+              <div>
+                <label for="name" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold"
+                  >Company <b class="">*</b></label
+                >
+                <input
+                  type="name"
+                  name="name" placeholder="yourcompany name here"
+                  class=" text-black text-sm border border-[#D3D3D3] rounded-md block w-full lg:w-[35rem] p-2.5"
+                  required
+                />
+              </div>
+    
+              <div >
+                  <label for="name" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold"
+                    >Subject <b class="">*</b></label
+                  >
+                  <input
+                    type="email"
+                    name="last name" placeholder="how can we help"
+                    class=" text-black text-sm border border-[#D3D3D3] rounded-md block w-full lg:w-[35rem] p-2.5"
+                    required
+                  />
+                </div>
+              </div>
+           
+              <div>
+                <label for="email" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold"
+                  >Message <b>*</b></label >
+               <textarea name="message"  class="h-36 text-black text-sm border border-[#D3D3D3] shadow-lg rounded-md block w-full p-2.5" placeholder="hello there,i would like to talk about how to..."></textarea>
+              
+              </div>
+               <div class="mt-4 flex justify-center">
+                    <button class="bg-[#242331] text-white text-2xl font-semibold px-12 py-4  rounded-full mt-8 mb-[-1.5rem]">Send Message</button>
+                </div>
+            
+          </form>
+    </div>
+  </div>
+  
         <!-- Map Section -->
         <section class="md:min-h-screen md:my-[7rem]  ">
             <h2
-                class="md:text-[4rem] text-[1.75rem] text-start leading-normal md:leading-[70px] w-[90%] mx-auto font-[800] text-[#0B1C98] font-Nunito md:my-[7rem]">
+                class="md:text-4xl text-[1.75rem] text-start leading-normal md:leading-[70px] w-[90%] mx-auto font-[800] text-[#0B1C98] font-Nunito md:my-[7rem]">
                 Address
                 for
-                Below
+                Belowd
                 Countries :
             </h2>
             <div class="bg-center md:bg-cover bg-contain w-full h-[40vh] md:h-[90vh] bg-no-repeat relative"
                 style="background-image: url(./images/contactusPage_2_Map.png);">
                 <div
                     class="bg-[#D9D9D9] absolute top-[24%] left-[33%] md:top-[11.5rem] md:left-[27rem] flex justify-center items-center   h-[5vmin] w-[5vmin]  rounded-full">
-                    <button class="w-[3.5vmin] h-[3.5vmin] rounded-full blur-[2px] bg-[#0B1C98]">
+               <button class="w-[3.5vmin] h-[3.5vmin] rounded-full blur-[2px] bg-[#0B1C98]">
                     </button>
                 </div>
                 <div
@@ -144,7 +154,7 @@
                         <button class="w-[2vmax] h-[2vmax] rounded-full blur-[2px] bg-[#0B1C98]">
                         </button>
                     </div>
-                    <h2 class="text-[#242331] text-[1.25rem] text-justify md:text-[3rem] font-Nunito font-[600]">India -
+                    <h2 id="box" class="text-[#242331] text-[1.25rem] text-justify md:text-[3rem] font-Nunito font-[600]">India -
                         Banglore , Pune , Hydrebad
                         , Indore
                     </h2>
