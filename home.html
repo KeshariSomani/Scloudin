@@ -1,88 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home_Scloudin</title>
-    <!--Font Link -->
-    <link href='https://fonts.googleapis.com/css?family=MuseoModerno' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@800&display=swap" rel="stylesheet">
 
-    <!--tailwind cdn link-->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home_Scloudin</title>
+  <!--Font Link -->
+  <link href='https://fonts.googleapis.com/css?family=MuseoModerno' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@800&display=swap" rel="stylesheet">
+
+  <!--tailwind cdn link-->
+  <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <style>
-    .testfont_{
-      font-family: 'Inter';
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 22px;
-    }
+  .testfont_ {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
 
-    .testfont1{
-      font-family: 'Inter';
-      font-size: 14px;
-      font-weight: 700px;
-      line-height: 22px;
-    }
+  .testfont1 {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 700px;
+    line-height: 22px;
+  }
 
-    /* navbar styling */
+  /* navbar styling */
 
-    .navbar {
-            
-            overflow: hidden;
-        }
-        
-        .navbar .company-name {
-            float: left;
-            padding: 10px 20px;
-            color: #9747FF;
-            text-decoration: none;
-            font-size: 20px;
-        }
-        
-        
-        .navbar .nav-links {
-            float: right;
-            padding: 10px 20px;
-        }
-        
-        
-        .navbar .nav-links a {
-            color: #9747FF;
-            text-decoration: none;
-            margin: 0 10px;
-        }
+  .navbar {
 
-    /* navbar styling */
+    overflow: hidden;
+  }
 
-    .section1 {
-        position: relative;
-        text-align: center;
-        color: white;
-      }
-    .centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      .about{
-      font-family: 'MuseoModerno';
-      font-weight: 900;
-      }
-      .poppins{
-        font-family: 'Poppins';
-      }
-      .nutino{
-        font-family: 'Nunito';
-      }
-              /* companies bannner */
+  .navbar .company-name {
+    float: left;
+    padding: 10px 20px;
+    color: #9747FF;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+
+  .navbar .nav-links {
+    float: right;
+    padding: 10px 20px;
+  }
+
+
+  .navbar .nav-links a {
+    color: #9747FF;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  /* navbar styling */
+
+  .section1 {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .about {
+    font-family: 'MuseoModerno';
+    font-weight: 900;
+  }
+
+  .poppins {
+    font-family: 'Poppins';
+  }
+
+  .nutino {
+    font-family: 'Nunito';
+  }
+
+  /* companies bannner */
   logo-slider {
     --image-size: 100px;
     padding: 20px;
@@ -93,18 +99,21 @@
     position: relative;
     display: flex;
   }
+
   logo-slider div {
     display: flex;
     position: relative;
     animation: marquee 15s linear infinite;
     justify-content: space-around;
   }
+
   logo-slider img {
     display: block;
     min-width: var(--image-size);
     height: var(--image-size);
     margin: 0 1vw;
   }
+
   logo-slider:after {
     content: "";
     position: absolute;
@@ -116,142 +125,299 @@
   }
 
 
+  /* crousel */
+
+
+
+  .carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    
+  }
+
+  .carousel {
+    display: flex;
+    transition: transform 0.5s;
+    
+  }
+
+  .associationSectionCarousel{
+    display: flex;
+    transition: transform 0.5s;
+  }
+
+  .carousel-item {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 400px;
+    /* Set your desired height */
+    background-color: #FFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+    
+  }
+
+  .next-button {
+    right:0;
+  }
+
+  /* crousel */
+
+
+
+
   @media (max-width: 900px) {
     logo-slider {
       --image-size: 50px;
       --image-size: min(max(50px, 10vw), 100px);
     }
   }
-  
+
+  @media only screen and (max-width: 1026px) {
+    #fadeshow1 {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    #hideDesktopMap {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    #showMobileMap {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    #showCard16Crousel {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    #serviceSolutionAreas_cards {
+      display: none;
+    }
+  }
+
+
   @keyframes marquee {
     0% {
       transform: translateX(0%);
     }
+
     100% {
       transform: translateX(-100%);
     }
   }
-  
 </style>
+
 <body>
 
-<!-- header section -->
-<!-- header top -->
-<div class=" bg-[#0B1C98] text-white h-[61px] px-4 flex justify-between"> 
-  <div class="flex items-center gap-2">
-    <span>
-      <img src="icons/EnvelopeOpen.svg" alt="main" class="">
-    </span>
-    <p >Email us at : contactus@SCLOUDIN.in</p>
-  </div>
-
-
-  <div class="flex items-center gap-7 pr-5"> 
-    <img src="icons/Vector.svg" alt="main" class="">
-    <img src="icons/Vector (1).svg" alt="main" class="">
-    <img src="icons/Vector (2).svg" alt="main" class="">
-     <p class="h-[39px] w-[1px] bg-white "></p>
-     <img src="icons/Phone.svg" alt="main" class="">
-     <p class="testfont_">9843078205</p>
-  </div>
-</div>
-
-<!-- header bottom -->
-
-<div class="bg-[#fff] h-[6.8rem] w-full flex items-center ">
-  
-  <div class="navbar flex items-center gap-10 ">
-    <a class="company-name" href="#"><img src="images/3 1.svg" alt="main" class=""></a>
-    <div class="nav-links flex gap-6 uppercase ml-22 ">
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">why scloudin</a>
-        <a href="#">technology</a>
-        <a href="#">Products</a>
-        <a href="#">services</a>
-        <a href="#">careers</a>
-        <a href="#">contact us</a>
-        <a href="#">blogs</a>
-
+  <!-- header section -->
+  <!-- header top -->
+  <div id="fadeshow1" class=" bg-[#0B1C98] text-white h-[61px] px-4 flex justify-between">
+    <div class="flex items-center gap-2">
+      <span>
+        <img src="icons/EnvelopeOpen.svg" alt="main" class="">
+      </span>
+      <p>Email us at : contactus@SCLOUDIN.in</p>
     </div>
-</div>
-
-</div>
-<!-- header section -->
 
 
- <!--Section 1-->   
-    <div class="section1">
-        <img src="images/Home_Sec1_MainBG.svg" alt="main" class="w-[100%]">
-      
-        <div class="centered">
-            <p class="text-md md:text-4xl lg:text-6xl font-extrabold">WE CREATE THE WEB</p>
-            <p class="mt-2 lg:mt-8 lg:text-xl md:text-lg">An awarded agency creating services for digital economy</p>
+    <div class=" flex items-center gap-7 pr-5">
+      <img src="icons/Vector.svg" alt="main" class="">
+      <img src="icons/Vector (1).svg" alt="main" class="">
+      <img src="icons/Vector (2).svg" alt="main" class="">
+      <p class="h-[39px] w-[1px] bg-white "></p>
+      <img src="icons/Phone.svg" alt="main" class="">
+      <p class="testfont_">9843078205</p>
+    </div>
+  </div>
+
+  <!-- header bottom -->
+
+  </div>
+
+
+  <!-- Navbar goes here -->
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-[95rem] lg:px-6 ">
+      <div class="flex justify-between lg:">
+
+        <div class="">
+          <!-- Website Logo -->
+          <a href="#" class="flex items-center py-4 px-2">
+            <img src="images/3 1.svg" alt="Logo" class=" ">
+          </a>
+        </div>
+        <!-- Primary Navbar items -->
+        <div class="hidden md:flex items-center space-x-1 gap-4 uppercase">
+          <a href="" class="py-4 px-2 text-[#9747FF] font-bold ">Home</a>
+          <a href="" class="py-4 px-2 text-[#9747FF]  hover:font-semibold transition duration-300">About Us </a>
+          <a href="" class="py-4 px-2 text-[#9747FF]  hover:font-semibold transition duration-300">Why Scloudin</a>
+          <a href="" class="py-4 px-2 text-[#9747FF]  hover:font-semibold transition duration-300">Technology</a>
+          <a href="" class="py-4 px-2 text-[#9747FF]  hover:font-semibold transition duration-300">Products</a>
+          <a href="" class="py-4 px-2 text-[#9747FF]  hover:font-semibold transition duration-300">services</a>
+          <a href="" class="py-4 px-2 text-[#9747FF]  hover:font-semibold transition duration-300">careers</a>
+          <a href="" class="py-4 px-2 text-[#9747FF]  hover:font-semibold transition duration-300">Contact Us</a>
+          <a href="" class="py-4 px-2 text-[#9747FF]  hover:font-semibold transition duration-300">Blogs</a>
+
+        </div>
+
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden flex items-center">
+          <button class="outline-none mobile-menu-button px-4 ">
+            <svg class=" w-8 h-8 text-[#0B1C98] hover:font-semibold  " x-show="!showMenu" fill="none"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
         </div>
       </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="hidden mobile-menu">
+      <ul class="">
+        <li class="active"><a href="index.html"
+            class="block text-sm px-2 py-4 text-white bg-[#9747FF] font-semibold">Home</a></li>
+        <li><a href="#services"
+            class="block text-sm  px-2 py-4 hover:bg-[#9747FF] hover:text-white transition duration-300">About Us</a>
+        </li>
+        <li><a href="#about" class="block text-sm  px-2 py-4 hover:bg-[#9747FF] transition duration-300">Why
+            Scloudin</a></li>
+        <li><a href="#contact"
+            class="block text-sm  px-2 py-4 hover:bg-[#9747FF] transition duration-300">Technology</a>
+        </li>
+        <li><a href="#about" class="block text-sm  px-2 py-4 hover:bg-[#9747FF] transition duration-300">Products</a>
+        </li>
+        <li><a href="#about" class="block text-sm  px-2 py-4 hover:bg-[#9747FF] transition duration-300">Services</a>
+        </li>
+        <li><a href="#about" class="block text-sm  px-2 py-4 hover:bg-[#9747FF] transition duration-300">Careers</a>
+        </li>
+        <li><a href="#about" class="block text-sm  px-2 py-4 hover:bg-[#9747FF] transition duration-300">Contact Us</a>
+        </li>
+        <li><a href="#about" class="block text-sm  px-2 py-4 hover:bg-[#9747FF] transition duration-300">Blogs</a></li>
 
-<!--Section 2-->
-     <div> 
-        <p class="mt-8 text-[#0B1C98] text-4xl md:text-7xl lg:text-7xl text-center about ">About US</p>
-        <p class="mx-8 mt-4 text-[#889099] text-lg md:text-xl lg:text-2xl">Scloudin is a network of connected , young passionate software engineers . Our firm is based in Banglore , India </p>
-     </div>
-<!--Section 3-->
+      </ul>
+    </div>
+    <script>
+
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+
+    </script>
+  </nav>
+
+  <!-- header section -->
+
+
+  <!--Section 1-->
+  <div class="section1">
+    <img src="images/Home_Sec1_MainBG.svg" alt="main" class="w-[100%]">
+
+    <div class="centered">
+      <p class="text-md md:text-4xl lg:text-6xl font-extrabold">WE CREATE THE WEB</p>
+      <p class="mt-2 lg:mt-8 lg:text-xl md:text-lg">An awarded agency creating services for digital economy</p>
+    </div>
+  </div>
+
+  <!--Section 2-->
+  <div>
+    <p class="mt-8 text-[#0B1C98] text-4xl md:text-7xl lg:text-7xl text-center about ">About US</p>
+    <p class="mx-8 mt-4 text-[#889099] text-lg md:text-xl lg:text-2xl">Scloudin is a network of connected , young
+      passionate software engineers . Our firm is based in Banglore , India </p>
+  </div>
+  <!--Section 3-->
   <div class="lg:flex flex-row-reverse justify-between  md:pl-5 h-full w-full main">
     <div>
-        <img src="images/Home_Sec3_aboutUs.svg" alt="About us image"
-      class="h-full w-[90%] mx-auto md:mx-0 md:h-96 md:w-full  lg:h-[40rem] lg:w-[40rem] lg:w-1/2"/>
+      <img src="images/Home_Sec3_aboutUs.svg" alt="About us image"
+        class="h-full w-[90%] mx-auto md:mx-0 md:h-96 md:w-full  lg:h-[40rem] lg:w-[40rem] lg:w-1/2" />
     </div>
     <div class=" p-2 px-8 lg:px-0 lg:w-1/2 lg:ml-12  lg:mt-24">
-        <p class="text-[#9747FF] text-lg font-semibold">About</p>
-        <p class="text-[#0B1C98] text-3xl">Who We Are? </p>
-    
-        <p class="text-[#37454D] text-xl text-justify"> We are a small young start up who builds everything around “ People & Technology ’’ We are agile software engineers , passionate for work life balance . We are skilled team of professionals in the field of software development . We use our passion for development to deliver the best software applications with the combination of technology know how ? and with great communication , we can create complete solutions for our clients. </p>
-        
-        <div class="md:flex flex-row justify-between mt-8">
-            <div> <b class="text-4xl">100</b> <b class="text-4xl  text-[#0B1C98]">M</b> 
-                <p class="font-bold text-lg">Client Satisfaction</p>
-            </div>
-            <div class="lg:mx-24 lg:mt-0 md:mt-0 mt-8"><b class="text-4xl">98</b> <b class="text-4xl  text-[#FFBD59]">k+</b>
-                <p class="font-bold text-lg">Sales Count</p>
-            </div>
+      <p class="text-[#9747FF] text-lg font-semibold">About</p>
+      <p class="text-[#0B1C98] text-3xl">Who We Are? </p>
+
+      <p class="text-[#37454D] text-xl text-justify"> We are a small young start up who builds everything around “
+        People & Technology ’’ We are agile software engineers , passionate for work life balance . We are skilled team
+        of professionals in the field of software development . We use our passion for development to deliver the best
+        software applications with the combination of technology know how ? and with great communication , we can create
+        complete solutions for our clients. </p>
+
+      <div class="md:flex flex-row justify-between mt-8">
+        <div> <b class="text-4xl">100</b> <b class="text-4xl  text-[#0B1C98]">M</b>
+          <p class="font-bold text-lg">Client Satisfaction</p>
         </div>
-        <div class="md:flex flex-row justify-between mt-8">
-          <div> <b class="text-4xl">24</b> <b class="text-4xl  text-[#FFBD59]">h</b> 
-              <p class="font-bold text-lg">Expert Support Team</p>
-          </div>
-          <div class="lg:mx-12 lg:mt-0 md:mt-0 mt-8"><b class="text-4xl">208</b> <b class="text-4xl  text-[#FFBD59]">+</b>
-              <p class="font-bold text-lg">Client Worldwide</p>
-          </div>
+        <div class="lg:mx-24 lg:mt-0 md:mt-0 mt-8"><b class="text-4xl">98</b> <b class="text-4xl  text-[#FFBD59]">k+</b>
+          <p class="font-bold text-lg">Sales Count</p>
+        </div>
+      </div>
+      <div class="md:flex flex-row justify-between mt-8">
+        <div> <b class="text-4xl">24</b> <b class="text-4xl  text-[#FFBD59]">h</b>
+          <p class="font-bold text-lg">Expert Support Team</p>
+        </div>
+        <div class="lg:mx-12 lg:mt-0 md:mt-0 mt-8"><b class="text-4xl">208</b> <b class="text-4xl  text-[#FFBD59]">+</b>
+          <p class="font-bold text-lg">Client Worldwide</p>
+        </div>
       </div>
     </div>
-  </div>   
-  <!--Section 4-->  
-    <div class="mt-4">
-       <img src="images/Home_Sec3_img.svg" alt="">
-    </div>
-  <!--Section 5-->  
-    <div class="mx-8 mt-12">
-      <p class="text-[#9747FF] text-lg font-semibold">About</p>
-      <p class="text-[#0B1C98] text-3xl">What We Do? </p>
-  
-      <p class="text-[#37454D] text-xl text-justify"> We provide software solution for innovative idea and new trends in market . We help business to adopt new technologies for their growth . We always apply best practice in the software development process and the very latest technology . We warrant customer satisfaction to the best of our ability with reasonable cost and an excellent maintainance service provided by dedicated engineers. </p>
-    </div>
+  </div>
+  <!--Section 4-->
+  <div class="mt-4">
+    <img src="images/Home_Sec3_img.svg" alt="">
+  </div>
+  <!--Section 5-->
+  <div class="mx-8 mt-12">
+    <p class="text-[#9747FF] text-lg font-semibold">About</p>
+    <p class="text-[#0B1C98] text-3xl">What We Do? </p>
 
-  <!--Section 6-->  
-  <div> 
+    <p class="text-[#37454D] text-xl text-justify"> We provide software solution for innovative idea and new trends in
+      market . We help business to adopt new technologies for their growth . We always apply best practice in the
+      software development process and the very latest technology . We warrant customer satisfaction to the best of our
+      ability with reasonable cost and an excellent maintainance service provided by dedicated engineers. </p>
+  </div>
+
+  <!--Section 6-->
+  <div>
     <p class="mt-8 text-[#0B1C98] text-4xl md:text-7xl lg:text-7xl text-center about ">Our Values</p>
-    <p class="mx-8 mt-4 text-[#889099] text-justify text-lg md:text-xl lg:text-2xl">We love what we do , and we are proud to work on challenging projects , providing  the  best of our resources and processes for every client , from start - ups to global organizations. </p>
- </div>
+    <p class="mx-8 mt-4 text-[#889099] text-justify text-lg md:text-xl lg:text-2xl">We love what we do , and we are
+      proud to work on challenging projects , providing the best of our resources and processes for every client , from
+      start - ups to global organizations. </p>
+  </div>
 
-<!--Section 7-->
-<section>
+  <!--Section 7-->
+  <section>
     <div class="lg:flex flex-row mx-8 mt-8">
-      
+
       <div class="w-full lg:w-1/2 h-auto md:h-48 lg:h-48 bg-[#F9F9F9] rounded-xl mr-8 lg:mt-0 mt-8 flex items-center">
         <img src="images/Home_Sec7_card1_icon.svg" alt="" class="lg:h-32 md:h-32 h-12 mx-4">
         <div class="mx-4 mb-4 md:mb-0 lg:mb-0 mt-4 md:mt-0 lg:mt-0">
           <p class=" text-lg lg:text-2xl font-bold">Respect for Our Clients</p>
-          <p class="text-[#797979] lg:text-md text-sm mt-2">We seek long term relationships with our clients and hope to be the technology partner that helps them achieve their IT goals, now and in the future</p>
+          <p class="text-[#797979] lg:text-md text-sm mt-2">We seek long term relationships with our clients and hope to
+            be the technology partner that helps them achieve their IT goals, now and in the future</p>
         </div>
       </div>
 
@@ -259,19 +425,21 @@
         <img src="images/Home_Sec7_card2_icon.svg" alt="" class="lg:h-32 md:h-32 h-12 mx-4">
         <div class="mx-4 mb-4 md:mb-0 lg:mb-0 mt-4 md:mt-0 lg:mt-0">
           <p class="text-lg lg:text-2xl font-bold">Passion for Excellence</p>
-          <p class="text-[#797979] lg:text-md text-sm mt-2">We love what we do, and we are proud to work on challenging projects, providing the best of our resources and processes for every client.</p>
+          <p class="text-[#797979] lg:text-md text-sm mt-2">We love what we do, and we are proud to work on challenging
+            projects, providing the best of our resources and processes for every client.</p>
         </div>
       </div>
 
     </div>
 
     <div class="lg:flex flex-row mx-8 mt-8">
-      
+
       <div class="w-full lg:w-1/2 h-auto md:h-48 lg:h-48 bg-[#F9F9F9] rounded-xl mr-8 lg:mt-0 mt-8 flex items-center">
         <img src="images/Home_Sec7_card3_icon.svg" alt="" class="lg:h-32 md:h-32 h-12 mx-4">
         <div class="mx-4 mb-4 md:mb-0 lg:mb-0 mt-4 md:mt-0 lg:mt-0">
           <p class="text-lg lg:text-2xl font-bold ">We are a Team</p>
-          <p class="text-[#797979] lg:text-md text-sm mt-2">Working with SCLOUDIN means that you are not working with just a sole individual contractor, you have a big team of developers , project managers etc</p>
+          <p class="text-[#797979] lg:text-md text-sm mt-2">Working with SCLOUDIN means that you are not working with
+            just a sole individual contractor, you have a big team of developers , project managers etc</p>
         </div>
       </div>
 
@@ -279,49 +447,58 @@
         <img src="images/Home_Sec7_card4_icon.svg" alt="" class="lg:h-32 md:h-32 h-12 mx-4">
         <div class="mx-4 mb-4 md:mb-0 lg:mb-0 mt-4 md:mt-0 lg:mt-0">
           <p class="text-lg lg:text-2xl font-bold">Complete Visibility</p>
-          <p class="text-[#797979] lg:text-md text-sm mt-2">Our rigorous process is another key to success at SCLOUDIN. It guarantees the quality of our services by providing a smooth experience with our clients. </p>
+          <p class="text-[#797979] lg:text-md text-sm mt-2">Our rigorous process is another key to success at SCLOUDIN.
+            It guarantees the quality of our services by providing a smooth experience with our clients. </p>
         </div>
       </div>
 
     </div>
-  </section>  
+  </section>
   <!--Section 8-->
-        
+
   <div class="mt-8 lg:flex flex-row-reverse justify-between  md:pl-5 h-full w-full main">
     <div>
-        <img src="images/Home_Sec8_ourFocus.svg" alt="About us image"
-      class="h-full w-[90%] mx-auto md:mx-0 md:h-96 md:w-full  lg:h-[35rem] lg:w-[40rem] lg:w-1/2"/>
+      <img src="images/Home_Sec8_ourFocus.svg" alt="About us image"
+        class="h-full w-[90%] mx-auto md:mx-0 md:h-96 md:w-full  lg:h-[35rem] lg:w-[40rem] lg:w-1/2" />
     </div>
     <div class=" p-2 px-8 lg:px-0 lg:w-1/2 lg:ml-12  lg:mt-24">
-       
-        <p class="text-[#0B1C98] text-6xl about">Our Focus </p>
-    
-        <p class="text-[#37454D] text-xl text-justify mt-8"> Excellence in IT SOLUTIONS , Economic Prosperity for All , Full Potential of Technology , Attain Business Success </p>
-        
-        <div class="md:flex flex-row justify-between mt-8 poppins">
-            <div> 
-              <img src="images/Home_Sec8_bulb.svg" alt="">
-              <p class="text-2xl font-bold mt-6">Innovation</p>
-              <p class="text-[#5B5B5B] text-lg mt-2">Empowering Tomorrow and Unleashing the Creative Solutions</p>
-            </div>
-            <div class="lg:mx-24 lg:mt-0 md:mt-0 mt-8">
-              <img src="images/Home_Sec8_head_idea.svg" alt="">
-              <p class="text-2xl font-bold mt-4">New Ideas</p>
-              <p class="text-[#5B5B5B] text-lg mt-2">Fueling Progress and  Nurturing Fresh Ideas</p>
-            </div>
+
+      <p class="text-[#0B1C98] text-6xl about">Our Focus </p>
+
+      <p class="text-[#37454D] text-xl text-justify mt-8"> Excellence in IT SOLUTIONS , Economic Prosperity for All ,
+        Full Potential of Technology , Attain Business Success </p>
+
+      <div class="md:flex flex-row justify-between mt-8 poppins">
+        <div>
+          <img src="images/Home_Sec8_bulb.svg" alt="">
+          <p class="text-2xl font-bold mt-6">Innovation</p>
+          <p class="text-[#5B5B5B] text-lg mt-2">Empowering Tomorrow and Unleashing the Creative Solutions</p>
         </div>
-      
+        <div class="lg:mx-24 lg:mt-0 md:mt-0 mt-8">
+          <img src="images/Home_Sec8_head_idea.svg" alt="">
+          <p class="text-2xl font-bold mt-4">New Ideas</p>
+          <p class="text-[#5B5B5B] text-lg mt-2">Fueling Progress and Nurturing Fresh Ideas</p>
+        </div>
+      </div>
+
     </div>
-  </div>   
-<!--Section 9-->
-   <div class="h-auto w-full bg-[#F8FAFC] mt-8">
+  </div>
+  <!--Section 9-->
+  <div class="h-auto w-full bg-[#F8FAFC] mt-8">
     <div class="flex justify-center pt-8 nutino">
-      <p class="bg-cyan-700 text-white text-2xl rounded-md">Why</p><p class="text-2xl font-bold">Choose Us?</p>
+      <p class="bg-cyan-700 text-white text-2xl rounded-md">Why</p>
+      <p class="text-2xl font-bold">Choose Us?</p>
     </div>
     <div class="text-[#2C2738] mx-8 text-justify">
-      <p class="mt-8 text-lg">Scloudin was created by a team of experienced entrepreneurs who are deeply committed to technology and digital services scloudin now leverages this expertise by selectively partnering with more than half dozen start ups investing in their technology development , providing leadership and guidance , and growing these organizations with financial and in-kind support</p>
+      <p class="mt-8 text-lg">Scloudin was created by a team of experienced entrepreneurs who are deeply committed to
+        technology and digital services scloudin now leverages this expertise by selectively partnering with more than
+        half dozen start ups investing in their technology development , providing leadership and guidance , and growing
+        these organizations with financial and in-kind support</p>
 
-      <p class="mt-4 text-lg">Scloudin deploys its leadership and development teams to work with and invest in innovative mobile product startups having created premium apps spanning a variety of content , discliplines and digital formats , Scloudin enables companies to seamlessly add mobile to their technology stack, ensuring instant access to information - anytime , anywhere and on any device </p>
+      <p class="mt-4 text-lg">Scloudin deploys its leadership and development teams to work with and invest in
+        innovative mobile product startups having created premium apps spanning a variety of content , discliplines and
+        digital formats , Scloudin enables companies to seamlessly add mobile to their technology stack, ensuring
+        instant access to information - anytime , anywhere and on any device </p>
     </div>
 
     <div class="lg:flex flex-row justify-between mx-12 mt-12">
@@ -330,7 +507,8 @@
         <div>
           <p class="text-center text-[#2C2738] font-extrabold text-xl mt-4">01</p>
           <p class="text-[#0B1C98] font-bold text-xl mt-2 text-center">Speed and Simplicity</p>
-          <p class="text-[#2C2738] text-justify poppins text-sm mt-4">Efficiency meets elegance with our swift , simple solutions and we streamline the processes and experience unmatched speed .</p>
+          <p class="text-[#2C2738] text-justify poppins text-sm mt-4">Efficiency meets elegance with our swift , simple
+            solutions and we streamline the processes and experience unmatched speed .</p>
         </div>
       </div><!--1st card end-->
       <div class="h-auto w-full lg:w-[20%]">
@@ -338,7 +516,8 @@
         <div>
           <p class="text-center text-[#2C2738] font-extrabold text-xl mt-4">01</p>
           <p class="text-[#0B1C98] font-bold text-xl mt-2 text-center">Speed and Simplicity</p>
-          <p class="text-[#2C2738] text-justify poppins text-sm mt-4">Efficiency meets elegance with our swift , simple solutions and we streamline the processes and experience unmatched speed .</p>
+          <p class="text-[#2C2738] text-justify poppins text-sm mt-4">Efficiency meets elegance with our swift , simple
+            solutions and we streamline the processes and experience unmatched speed .</p>
         </div>
       </div><!--2 end-->
       <div class="h-auto w-full lg:w-[20%]">
@@ -346,7 +525,8 @@
         <div>
           <p class="text-center text-[#2C2738] font-extrabold text-xl mt-4">01</p>
           <p class="text-[#0B1C98] font-bold text-xl mt-2 text-center">Speed and Simplicity</p>
-          <p class="text-[#2C2738] text-justify poppins text-sm mt-4">Efficiency meets elegance with our swift , simple solutions and we streamline the processes and experience unmatched speed .</p>
+          <p class="text-[#2C2738] text-justify poppins text-sm mt-4">Efficiency meets elegance with our swift , simple
+            solutions and we streamline the processes and experience unmatched speed .</p>
         </div>
       </div><!--3rd end-->
       <div class="h-auto w-full lg:w-[20%]">
@@ -354,153 +534,288 @@
         <div>
           <p class="text-center text-[#2C2738] font-extrabold text-xl mt-4">01</p>
           <p class="text-[#0B1C98] font-bold text-xl mt-2 text-center">Speed and Simplicity</p>
-          <p class="text-[#2C2738] text-justify poppins text-sm mt-4">Efficiency meets elegance with our swift , simple solutions and we streamline the processes and experience unmatched speed .</p>
+          <p class="text-[#2C2738] text-justify poppins text-sm mt-4">Efficiency meets elegance with our swift , simple
+            solutions and we streamline the processes and experience unmatched speed .</p>
         </div>
       </div><!--4th end-->
     </div>
 
     <div class="flex justify-center mt-8 nutino">
-      <p class="bg-cyan-700 text-white text-2xl rounded-md">Why</p><p class="text-2xl font-bold">Scloudin</p>
+      <p class="bg-cyan-700 text-white text-2xl rounded-md">Why</p>
+      <p class="text-2xl font-bold">Scloudin</p>
     </div>
     <div class="mt-8">
       <img src="images/Home_Sec9_bottom.svg" alt="">
     </div>
-   </div><!--bg end why choose us-->
-   
-<!--Section 10-->  
-    <div class="mx-8 mt-12">
-      <p class="text-[#9747FF] text-lg font-semibold">What do we do</p>
-      <p class="text-[#0B1C98] text-5xl about mt-2">Our Technology </p>
-  
-      <p class="text-[#37454D] text-xl text-justify mt-4"> We understand that each project  and each client is unique with their own specific requirements . Based on our knowledge nd experience , we select the most suitable technology for the software solution you are looking for. </p>
+  </div><!--bg end why choose us-->
+
+  <!--Section 10-->
+  <div class="mx-8 mt-12">
+    <p class="text-[#9747FF] text-lg font-semibold">What do we do</p>
+    <p class="text-[#0B1C98] text-5xl about mt-2">Our Technology </p>
+
+    <p class="text-[#37454D] text-xl text-justify mt-4"> We understand that each project and each client is unique with
+      their own specific requirements . Based on our knowledge nd experience , we select the most suitable technology
+      for the software solution you are looking for. </p>
+  </div>
+
+
+
+  <!--Section 11-->
+  <div class=" lg:flex flex-row-reverse justify-between  md:pl-5 h-full w-full">
+    <div class="mx-8 mt-8 lg:mt-0">
+      <img src="images/Home_Sec11_Circular_Card1.svg" alt=" image"
+        class="h-full w-[90%]  md:mx-0 md:h-96 md:w-full  lg:h-[30rem] lg:w-[30rem]" />
+    </div>
+    <div class="mx-auto pt-4 px-8 lg:px-8 lg:ml-24 h-48 w-full lg:w-[40%] rounded-lg shadow-lg bg-white my-12 lg:mt-48">
+      <div class="flex mx-2">
+        <div class="h-12 w-12 rounded-lg bg-[#9CEDA4] flex items-center ">
+          <img src="images/Home_Sec11_Card1.svg" alt="" class="mx-auto">
+        </div>
+        <p class="text-[#9747FF] text-xl font-bold mx-4">Website <br> Development</p>
+      </div>
+
+      <div class="text-[#210746] mx-4 text-justify mt-4">Java , Go - Lang , PHP , Node.js , Bootstrap , Angular , JS ,
+        HTML , CSS3 , .NET , Web REST API , Perl, Python.</div>
+    </div>
+  </div>
+  <!--sec 11  card 2-->
+  <div class=" lg:flex flex-row justify-between  md:pl-5 h-auto w-full mt-0">
+    <div class="mx-24  lg:mt-0">
+      <img src="images/Home_Sec11_Circular_Card2.svg" alt="About us image"
+        class="h-full w-[90%]  md:mx-0 md:h-96 md:w-full  lg:h-[30rem] lg:w-[30rem]" />
+    </div>
+    <div class="mx-auto pt-4 px-8 lg:px-8 lg:ml-24 h-48 w-full lg:w-[40%] rounded-lg shadow-lg bg-white mt-12 lg:mt-36">
+      <div class="flex mx-2">
+        <div class="h-12 w-12 rounded-lg bg-[#EDA69C] flex items-center ">
+          <img src="images/Home_Sec11_Card2.svg" alt="" class="mx-auto">
+        </div>
+        <p class="text-[#9747FF] text-xl font-bold mx-4">Mobile App <br> Development</p>
+      </div>
+
+      <div class="text-[#210746] mx-4 text-justify mt-4">Flutter, Dart, Android native application , Phone, Tablet ,TV,
+        iPhone, iPad. Hybrid App , IOS native application , Hybrid native application</div>
     </div>
 
-     
-
-<!--Section 11-->
-<div class=" lg:flex flex-row-reverse justify-between  md:pl-5 h-full w-full">
-  <div class="mx-8 mt-8 lg:mt-0">
-      <img src="images/Home_Sec11_Circular_Card1.svg" alt=" image"
-    class="h-full w-[90%]  md:mx-0 md:h-96 md:w-full  lg:h-[30rem] lg:w-[30rem]"/>
   </div>
-  <div class="mx-auto pt-4 px-8 lg:px-8 lg:ml-24 h-48 w-full lg:w-[40%] rounded-lg shadow-lg bg-white my-12 lg:mt-48">
-       <div class="flex mx-2">
-           <div class="h-12 w-12 rounded-lg bg-[#9CEDA4] flex items-center ">
-            <img src="images/Home_Sec11_Card1.svg" alt="" class="mx-auto">
-          </div>
-          <p class="text-[#9747FF] text-xl font-bold mx-4">Website <br> Development</p>
-        </div>  
-          
-          <div class="text-[#210746] mx-4 text-justify mt-4">Java , Go - Lang , PHP , Node.js , Bootstrap , Angular , JS , HTML , CSS3 , .NET , Web REST API , Perl, Python.</div>
+  <!--Section card 3-->
+  <div class=" lg:flex flex-row-reverse justify-between  md:pl-5 h-full w-full">
+    <div class="mx-8 mt-8 lg:mt-0">
+      <img src="images/Home_Sec11_Circular_Card3.svg" alt=" image"
+        class="h-full w-[90%]  md:mx-0 md:h-96 md:w-full  lg:h-[30rem] lg:w-[30rem]" />
+    </div>
+    <div class="mx-auto pt-4 px-8 lg:px-8 lg:ml-24 h-48 w-full lg:w-[40%] rounded-lg shadow-lg bg-white my-12 lg:mt-48">
+      <div class="flex mx-2">
+        <div class="h-12 w-12 rounded-lg bg-[#9CEDA4] flex items-center ">
+          <img src="images/Home_Sec11_Card3.svg" alt="" class="mx-auto">
+        </div>
+        <p class="text-[#9747FF] text-xl font-bold mx-4">ERP & CMS <br> Development</p>
+      </div>
+
+      <div class="text-[#210746] mx-4 text-justify mt-4">Java , Go - Lang , PHP , Node.js , Bootstrap , Angular , JS ,
+        HTML , CSS3 , .NET , Web REST API , Perl, Python.</div>
+    </div>
   </div>
-</div>  
-             <!--sec 11  card 2--> 
-             <div class=" lg:flex flex-row justify-between  md:pl-5 h-auto w-full mt-0">
-              <div class="mx-24  lg:mt-0">
-                <img src="images/Home_Sec11_Circular_Card2.svg" alt="About us image"
-              class="h-full w-[90%]  md:mx-0 md:h-96 md:w-full  lg:h-[30rem] lg:w-[30rem]"/>
-            </div>
-              <div class="mx-auto pt-4 px-8 lg:px-8 lg:ml-24 h-48 w-full lg:w-[40%] rounded-lg shadow-lg bg-white mt-12 lg:mt-36">
-                   <div class="flex mx-2">
-                       <div class="h-12 w-12 rounded-lg bg-[#EDA69C] flex items-center ">
-                        <img src="images/Home_Sec11_Card2.svg" alt="" class="mx-auto">
-                      </div>
-                      <p class="text-[#9747FF] text-xl font-bold mx-4">Mobile App <br> Development</p>
-                    </div>  
-                      
-                      <div class="text-[#210746] mx-4 text-justify mt-4">Flutter, Dart, Android native application , Phone, Tablet ,TV, iPhone, iPad. Hybrid App , IOS native application , Hybrid native application</div>
-              </div>
-              
-            </div>   
-            <!--Section card 3-->
-            <div class=" lg:flex flex-row-reverse justify-between  md:pl-5 h-full w-full">
-              <div class="mx-8 mt-8 lg:mt-0">
-                  <img src="images/Home_Sec11_Circular_Card3.svg" alt=" image"
-                class="h-full w-[90%]  md:mx-0 md:h-96 md:w-full  lg:h-[30rem] lg:w-[30rem]"/>
-              </div>
-              <div class="mx-auto pt-4 px-8 lg:px-8 lg:ml-24 h-48 w-full lg:w-[40%] rounded-lg shadow-lg bg-white my-12 lg:mt-48">
-                   <div class="flex mx-2">
-                       <div class="h-12 w-12 rounded-lg bg-[#9CEDA4] flex items-center ">
-                        <img src="images/Home_Sec11_Card3.svg" alt="" class="mx-auto">
-                      </div>
-                      <p class="text-[#9747FF] text-xl font-bold mx-4">ERP & CMS <br> Development</p>
-                    </div>  
-                      
-                      <div class="text-[#210746] mx-4 text-justify mt-4">Java , Go - Lang , PHP , Node.js , Bootstrap , Angular , JS , HTML , CSS3 , .NET , Web REST API , Perl, Python.</div>
-              </div>
-            </div> 
-         <div class="mx-auto flex justify-center">
-           <button class="text-2xl bg-[#443D5E] text-white rounded-full px-4 py-2">View more</button>
-         </div>
+  <div class="mx-auto flex justify-center">
+    <button class="text-2xl bg-[#443D5E] text-white rounded-full px-4 py-2">View more</button>
+  </div>
 
-  <!--Section 12-->  
-      <div class="w-full h-56 mt-12 bg-[#EDEFF6] ">
-         <div class="flex justify-center pt-16"> 
-          <p class="text-2xl font-bold text-white bg-[#4A60A1] px-2 rounded-lg">Our</p>
-          <p class="text-2xl font-bold text-[#2C2738]">Products</p>
-         </div>
-         <p class="mx-4 text-[#889099] text-lg lg:text-xl flex justify-center mt-4">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat.</p>
-      </div>
+  <!--Section 12-->
+  <div class="w-full h-56 mt-12 bg-[#EDEFF6] ">
+    <div class="flex justify-center pt-16">
+      <p class="text-2xl font-bold text-white bg-[#4A60A1] px-2 rounded-lg">Our</p>
+      <p class="text-2xl font-bold text-[#2C2738]">Products</p>
+    </div>
+    <p class="mx-4 text-[#889099] text-lg lg:text-xl flex justify-center mt-4">Vestibulum ante ipsum primis in faucibus
+      orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat.</p>
+  </div>
 
-      <div class="relative">
-        <img src="images/Home_map_image.svg" class="" alt="" />
-        <div class="grid grid-cols-3 gap-12 ml-[10rem] ">
-        <div class=""> <img src="images/home_section12_imageOnMap _1.svg" class="" alt="" /> </div>
-        <div class=""> <img src="images/home_section12_imageOnMap _2.svg" class="" alt="" /> </div>
-        <div class=""> <img src="images/home_section12_imageOnMap _3.svg" class="" alt="" /> </div>
-        <div class=""> <img src="images/home_section12_imageOnMap _4.svg" class="" alt="" /> </div>
-        <div class=""> <img src="images/home_section12_imageOnMap _5.svg" class="" alt="" /> </div>
-        <div class=""> <img src="images/home_section12_imageOnMap _6.svg" class="" alt="" /> </div>
-      </div>
-      </div>
+  <!-- DesktopView for map section -->
 
-  <!--Section 13-->  
-  <div class="mx-12 mt-12">
+  <div id="hideDesktopMap">
+    <img src="images/Home_map_image.svg" class=" md:absolute" alt="" />
+    <div class="sm:flex sm:mx-[2rem] md:grid grid-cols-3 gap-12 lg:ml-[10rem] md:relative md:top-10 lg:top-[10rem]">
+      <div class=""> <img src="images/home_section12_imageOnMap _1.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_section12_imageOnMap _2.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_section12_imageOnMap _3.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_section12_imageOnMap _4.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_section12_imageOnMap _5.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_section12_imageOnMap _6.svg" class="" alt="" /> </div>
+    </div>
+  </div>
+
+  <!-- MobileView for map section -->
+
+  <div id="showMobileMap">
+    <img src="images/mapSection_mobileApp.svg" class="my-2 w-full absolute" alt="" />
+    <div class="flex flex-col gap-14 relative items-center relative top-[3rem]">
+      <div class=""> <img src="images/home_section12_imageOnMap _1.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_section12_imageOnMap _2.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_section12_imageOnMap _3.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_section12_imageOnMap _4.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_section12_imageOnMap _5.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_section12_imageOnMap _6.svg" class="" alt="" /> </div>
+    </div>
+  </div>
+
+
+  <!--Section 13-->
+  <div class="mx-12 mt-[6rem] lg:mt-[24rem]">
     <p class="text-[#242331] text-2xl font-semibold">Services</p>
     <p class="text-[#0B1C98] text-3xl lg:text-5xl about mt-2">Solution areas </p>
 
-    <p class="text-[#37454D] text-lg lg:text-xl text-justify mt-4"> We understand that each client is unique with their own specific requirements . Based on our knowledge and experience , we select the most suitable technology for the software solution you are looking for.</p>
-    <button class="text-2xl bg-[#4A60A1] text-white rounded-full px-8 py-2 mt-4 flex">All Services <img src="images/Home_Sec13_Btn_Arrow.svg" alt="arrow" class="pt-2 mx-2"></button>
-     
-    <div class="grid grid-cols-4 my-[2rem]">
-      <div> <img src="images/home_allServicesCard_1.svg" class="" alt="" /> </div>
-      <div> <img src="images/home_allServicesCard_2.svg" class="" alt="" /> </div>
-      <div> <img src="images/home_allServicesCard_3.svg" class="" alt="" /> </div>
-      <div> <img src="images/home_allServicesCard_4.svg" class="" alt="" /> </div>
-      <div> <img src="images/home_allServicesCard_5.svg" class="" alt="" /> </div>
-      <div> <img src="images/home_allServicesCard_6.svg" class="" alt="" /> </div>
-      <div> <img src="images/home_allServicesCard_7.svg" class="" alt="" /> </div>
-      <div> <img src="images/home_allServicesCard_8.svg" class="" alt="" /> </div>
-      <div> <img src="images/home_allServicesCard_9.svg" class="" alt="" /> </div>
-      <div> <img src="images/home_allServicesCard_10.svg" class="" alt="" /> </div>
-      <div> <img src="images/home_allServicesCard_11.svg" class="" alt="" /> </div>
-      <div> <img src="images/home_allServicesCard_12.svg" class="" alt="" /> </div>
-      <div> <img src="images/home_allServicesCard_13.svg" class="" alt="" /> </div>
-      <div> <img src="images/home_allServicesCard_14.svg" class="" alt="" /> </div>
-      <div> <img src="images/home_allServicesCard_15.svg" class="" alt="" /> </div>
-      <div> <img src="images/home_allServicesCard_16.svg" class="" alt="" /> </div>
-    </div>
-    <div class="flex flex-col gap-5 ">
-    <p class="text-xl text-[#797979] leading-normal"> Looking for Customizable ScloudIN Product Catalogue solution for your business ? Contact us now ! Want to know SclodIN product catalogue features , receive more information about the solution , get a solution demo or customized pricing ? </p>
+    <p class="text-[#37454D] text-lg lg:text-xl text-justify mt-4"> We understand that each client is unique with their
+      own specific requirements . Based on our knowledge and experience , we select the most suitable technology for the
+      software solution you are looking for.</p>
+    <button class="text-2xl bg-[#4A60A1] text-white rounded-full px-8 py-2 mt-4 flex">All Services <img
+        src="images/Home_Sec13_Btn_Arrow.svg" alt="arrow" class="pt-2 mx-2"></button>
 
-     <p class="text-xl text-[#797979] leading-normal"> Email us directly at : <span class="text-[#3662FF] font-semibold ">contactus@scloudin.in </span> </p>
-      
-     <p class="text-xl text-[#797979] leading-normal" > For sales enquiry please contact us at : <span class="text-[#3662FF] font-semibold"> contactus@scloudin.in </span></p>
+    <div id="serviceSolutionAreas_cards" class=" grid grid-cols-4 my-[2rem] ">
+      <div class=""> <img src="images/home_allServicesCard_1.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_allServicesCard_2.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_allServicesCard_3.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_allServicesCard_4.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_allServicesCard_5.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_allServicesCard_6.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_allServicesCard_7.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_allServicesCard_8.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_allServicesCard_9.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_allServicesCard_10.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_allServicesCard_11.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_allServicesCard_12.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_allServicesCard_13.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_allServicesCard_14.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_allServicesCard_15.svg" class="" alt="" /> </div>
+      <div class=""> <img src="images/home_allServicesCard_16.svg" class="" alt="" /> </div>
+    </div>
+
+
+    <!-- crouselImported -->
+
+
+    <div id="showCard16Crousel" class="carousel-container">
+      <div class="carousel" id="carousel">
+        <div class="carousel-item"> <img src="images/home_allServicesCard_1.svg" class="" alt="" /> </div>
+        <div class="carousel-item"> <img src="images/home_allServicesCard_2.svg" class="" alt="" /> </div>
+        <div class="carousel-item"> <img src="images/home_allServicesCard_3.svg" class="" alt="" /></div>
+        <div class="carousel-item"> <img src="images/home_allServicesCard_4.svg" class="" alt="" /> </div>
+        <div class="carousel-item"> <img src="images/home_allServicesCard_5.svg" class="" alt="" /> </div>
+        <div class="carousel-item"> <img src="images/home_allServicesCard_6.svg" class="" alt="" /> </div>
+        <div class="carousel-item"> <img src="images/home_allServicesCard_7.svg" class="" alt="" /> </div>
+        <div class="carousel-item"> <img src="images/home_allServicesCard_8.svg" class="" alt="" /> </div>
+        <div class="carousel-item"> <img src="images/home_allServicesCard_9.svg" class="" alt="" /> </div>
+        <div class="carousel-item"> <img src="images/home_allServicesCard_10.svg" class="" alt="" /> </div>
+        <div class="carousel-item"> <img src="images/home_allServicesCard_11.svg" class="" alt="" /> </div>
+        <div class="carousel-item"> <img src="images/home_allServicesCard_12.svg" class="" alt="" /> </div>
+        <div class="carousel-item"> <img src="images/home_allServicesCard_13.svg" class="" alt="" /> </div>
+        <div class="carousel-item"> <img src="images/home_allServicesCard_14.svg" class="" alt="" /> </div>
+        <div class="carousel-item"> <img src="images/home_allServicesCard_15.svg" class="" alt="" /> </div>
+        <div class="carousel-item"> <img src="images/home_allServicesCard_16.svg" class="" alt="" /> </div>
+
+
+
+        <!-- Add more carousel items here -->
+      </div>
+      <button class="prev-button" onclick="changeSlide(-1)"><img src="icons/left-arrow.svg" class=" h-7 w-7 " alt="" /></button>
+      <button class="next-button" onclick="changeSlide(1)"><img src="icons/right_arrow.svg" class=" h-7 w-7" alt="" /> </button>
+    </div>
+
+    <script>
+
+      const carousel = document.getElementById("carousel");
+      let slideIndex = 0;
+
+      function changeSlide(n) {
+        slideIndex += n;
+        if (slideIndex < 0) {
+          slideIndex = carousel.children.length - 1;
+        } else if (slideIndex >= carousel.children.length) {
+          slideIndex = 0;
+        }
+
+        const translateX = -slideIndex * 100 + "%";
+        carousel.style.transform = `translateX(${translateX})`;
+      }
+
+      // Initial slide
+      changeSlide(0);
+
+    </script>
+
+    <!-- crouselImported -->
+
+
+    <div class="flex flex-col gap-5 ">
+      <p class="text-xl text-[#797979] leading-normal"> Looking for Customizable ScloudIN Product Catalogue solution for
+        your business ? Contact us now ! Want to know SclodIN product catalogue features , receive more information
+        about the solution , get a solution demo or customized pricing ? </p>
+
+      <p class="text-xl text-[#797979] leading-normal"> Email us directly at : <span
+          class="text-[#3662FF] font-semibold ">contactus@scloudin.in </span> </p>
+
+      <p class="text-xl text-[#797979] leading-normal"> For sales enquiry please contact us at : <span
+          class="text-[#3662FF] font-semibold"> contactus@scloudin.in </span></p>
     </div>
   </div>
 
- 
+
   <!-- our Association Section -->
 
-    <div class="flex flex-col justify-center items-center my-[5rem] gap-10 ">
-       <h1 class="text-7xl font-extrabold about text-[#0B1C98] " > Our Services </h1>
-       <p class="text-[#797979] text-2xl" > SAAS Based Services and Application Design </p>
-       <img src="images/home_ourServices_main.svg" class="" alt="" />
-       <img src="images/home_ourServices_button.svg" class="" alt="" />
+  <div class="flex flex-col justify-center items-center my-[5rem] gap-10 ">
+    <h1 class="text-7xl font-extrabold about text-[#0B1C98] "> Our Services </h1>
+    <p class="text-[#797979] text-2xl"> SAAS Based Services and Application Design </p>
+    
+    <!-- servicesViewForDesktop -->
+    <div id="serviceSolutionAreas_cards" class="grid grid-cols-3 gap-8 ">
+      <div class=" rounded-[2.5rem]  flex justify-center items-center hover:bg-[#ADD8E6] hover:shadow-lg"><img src="images/ourServices_image1.svg" class="" alt=""/></div>
+      <div class="flex justify-center rounded-[2.5rem] items-center  hover:shadow-lg"><img src="images/ourServices_image2.svg" class="" alt=""/></div>
+      <div class="rounded-[2.5rem] flex justify-center items-center hover:bg-[#ADD8E6] hover:shadow-lg"><img src="images/ourServices_image3.svg" class="" alt=""/></div>
+    </div>
 
-    </div> 
 
-   <!-- our Association Section -->
+    <!-- servicesForMobileView -->
+
+    <div id="showCard16Crousel" class="carousel-container">
+      <div class="associationSectionCarousel" id="associationSectionCarousel">
+        <div class="carousel-item"> <img src="images/ourServices_image1.svg" class="" alt="" /> </div>
+        <div class="carousel-item"> <img src="images/ourServices_image2.svg" class="" alt="" /> </div>
+        <div class="carousel-item"> <img src="images/ourServices_image3.svg" class="" alt="" /></div>
+      </div>
+      <button class="prev-button" onclick="changeSlide(-1)"><img src="icons/left-arrow.svg" class=" h-7 w-7 " alt="" /></button>
+      <button class="next-button" onclick="changeSlide(1)"><img src="icons/right_arrow.svg" class=" h-7 w-7" alt="" /> </button>
+    </div>
+
+    <script>
+
+      const sectionCarousel = document.getElementById("associationSectionCarousel");
+      let sectionSlideIndex = 0;
+
+      function changeSlide(n) {
+        sectionSlideIndex += n;
+        if (sectionSlideIndex < 0) {
+          sectionSlideIndex = sectionCarousel.children.length - 1;
+        } else if (sectionSlideIndex >= sectionCarousel.children.length) {
+          sectionSlideIndex = 0;
+        }
+
+        const translateX = -sectionSlideIndex * 100 + "%";
+        sectionCarousel.style.transform = `translateX(${translateX})`;
+      }
+
+      // Initial slide
+      changeSlide(0);
+
+    </script>
+
+    <!-- servicesForMobileView -->
+
+
+
+    <img src="images/home_ourServices_button.svg" class="" alt="" />
+
+  </div>
+
+  <!-- our Association Section -->
 
 
   <!--Section 17-->
@@ -508,472 +823,468 @@
     <p class="text-[#242331] text-2xl font-semibold">Our Association</p>
     <p class="text-[#0B1C98] text-3xl lg:text-5xl about mt-2">Partners </p>
 
-    <p class="text-[#37454D] text-lg lg:text-xl text-justify mt-4"> SCLOUDIN is a customer centric company focused on solving customer day to day problems and providing sustainable business solutions for their growth and suggest technology advantages. SCLOUDIN strongly believe that a strategic partnership is crucial to growth and success. We share similar values, common objectives, and shared goals with all our partners. SCLOUDIN partner ecosystem is driven by collaboration, knowledge sharing, and mutual growth opportunities with a common goal to ensure optimized customer satisfaction and business growth</p>
+    <p class="text-[#37454D] text-lg lg:text-xl text-justify mt-4"> SCLOUDIN is a customer centric company focused on
+      solving customer day to day problems and providing sustainable business solutions for their growth and suggest
+      technology advantages. SCLOUDIN strongly believe that a strategic partnership is crucial to growth and success. We
+      share similar values, common objectives, and shared goals with all our partners. SCLOUDIN partner ecosystem is
+      driven by collaboration, knowledge sharing, and mutual growth opportunities with a common goal to ensure optimized
+      customer satisfaction and business growth</p>
 
   </div>
 
-   <!--Section  18-->
- 
-  <div class=" w-[100%] h-auto  overflow-x-hidden ">
-   <section class="flex overflow-x-hidden items-center border p-10 my-[86.97px] sm:py-5 lg:px-24">
-    
-    <div>
-      <logo-slider>
-    
-        <div>
-          <div class="slide flex items-center">
-            <img src="images//Home_Sec18_Google.svg" class="h-16" alt="" />
-          </div>
-              
-              <div class="slide flex items-center">
-                <img src="images/Home_Sec18_Microsoft.svg" class="h-16" alt="" />
-              </div>
-              <div class="slide flex items-center">
-                <img src="images/Home_Sec18_IBM.svg" class="h-16" alt="" />
-              </div>
-              <div class="slide flex items-center">
-                <img src="images/Home_Sec18_HP.svg" class="h-16" alt="" />
-              </div>
-              <div class="slide flex items-center">
-                <img src="images/Home_Sec18_AWS.svg"class="h-16" alt="" />
-              </div>
-              <div class="slide flex items-center">
-                <img src="images/Home_Sec18_ME.svg" class="h-16" alt="" />
-              </div>
-              <div class="slide flex items-center">
-                <img src="images/Home_Sec18_v.svg" class="h-16" alt="" />
-              </div>
-              <div class="slide flex items-center">
-                <img src="images//Home_Sec18_Google.svg" class="h-16" alt="" />
-              </div>
-                  
-                  <div class="slide flex items-center">
-                    <img src="images/Home_Sec18_Microsoft.svg" class="h-16" alt="" />
-                  </div>
-                  <div class="slide flex items-center">
-                    <img src="images/Home_Sec18_IBM.svg" class="h-16" alt="" />
-                  </div>
-                  <div class="slide flex items-center">
-                    <img src="images/Home_Sec18_HP.svg" class="h-16" alt="" />
-                  </div>
-                  <div class="slide flex items-center">
-                    <img src="images/Home_Sec18_AWS.svg"class="h-16" alt="" />
-                  </div>
-                  <div class="slide flex items-center">
-                    <img src="images/Home_Sec18_ME.svg" class="h-16" alt="" />
-                  </div>
-                  <div class="slide flex items-center">
-                    <img src="images/Home_Sec18_v.svg" class="h-16" alt="" />
-                  </div>
-                
-         </div>
-      
-      </logo-slider>
-    </div>
-  </section>
-</div>
-  
- <!--Section 19-->
- <div class="mx-12 mt-12">
-  <p class="text-[#0B1C98] text-3xl lg:text-5xl about mt-2">Clients </p>
-  <p class="text-[#797979] text-xl lg:text-xl text-justify mt-4">Few but not all connection and projects we are working in current state and delivered the top notch quality outcomes.</p>
-</div>
+  <!--Section  18-->
 
-   <!--Section  19-->
- 
-   <div class=" w-[100%] h-auto  overflow-x-hidden ">
+  <div class=" w-[100%] h-auto  overflow-x-hidden ">
     <section class="flex overflow-x-hidden items-center border p-10 my-[86.97px] sm:py-5 lg:px-24">
-     
-     <div>
-       <logo-slider>
-     
-         <div>
-          
-           <div class="slide flex items-center">
+
+      <div>
+        <logo-slider>
+
+          <div>
+            <div class="slide flex items-center">
+              <img src="images//Home_Sec18_Google.svg" class="h-16" alt="" />
+            </div>
+
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec18_Microsoft.svg" class="h-16" alt="" />
+            </div>
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec18_IBM.svg" class="h-16" alt="" />
+            </div>
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec18_HP.svg" class="h-16" alt="" />
+            </div>
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec18_AWS.svg" class="h-16" alt="" />
+            </div>
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec18_ME.svg" class="h-16" alt="" />
+            </div>
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec18_v.svg" class="h-16" alt="" />
+            </div>
+            <div class="slide flex items-center">
+              <img src="images//Home_Sec18_Google.svg" class="h-16" alt="" />
+            </div>
+
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec18_Microsoft.svg" class="h-16" alt="" />
+            </div>
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec18_IBM.svg" class="h-16" alt="" />
+            </div>
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec18_HP.svg" class="h-16" alt="" />
+            </div>
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec18_AWS.svg" class="h-16" alt="" />
+            </div>
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec18_ME.svg" class="h-16" alt="" />
+            </div>
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec18_v.svg" class="h-16" alt="" />
+            </div>
+
+          </div>
+
+        </logo-slider>
+      </div>
+    </section>
+  </div>
+
+  <!--Section 19-->
+  <div class="mx-12 mt-12">
+    <p class="text-[#0B1C98] text-3xl lg:text-5xl about mt-2">Clients </p>
+    <p class="text-[#797979] text-xl lg:text-xl text-justify mt-4">Few but not all connection and projects we are
+      working in current state and delivered the top notch quality outcomes.</p>
+  </div>
+
+  <!--Section  19-->
+
+  <div class=" w-[100%] h-auto  overflow-x-hidden ">
+    <section class="flex overflow-x-hidden items-center border p-10 my-[86.97px] sm:py-5 lg:px-24">
+
+      <div>
+        <logo-slider>
+
+          <div>
+
+            <div class="slide flex items-center">
               <img src="images/Home_Sec19_Sanovi.svg" class="h-16" alt="" />
             </div>
-               <div class="slide flex items-center">
-                 <img src="images/Home_Sec19_Happiness.svg" class="h-16" alt="" />
-               </div>
-               <div class="slide flex items-center">
-                 <img src="images/Home_Sec19_Tie.svg" class="h-16" alt="" />
-               </div>
-               <div class="slide flex items-center">
-                 <img src="images/Home_Sec19_Orbital.svg" class="h-16" alt="" />
-               </div>
-               <div class="slide flex items-center">
-                 <img src="images/Home_Sec19_Jio.svg"class="h-16" alt="" />
-               </div>
-               <div class="slide flex items-center">
-                <img src="images/Home_Sec19_Sanovi.svg" class="h-16" alt="" />
-              </div>
-                 <div class="slide flex items-center">
-                   <img src="images/Home_Sec19_Happiness.svg" class="h-16" alt="" />
-                 </div>
-                 <div class="slide flex items-center">
-                   <img src="images/Home_Sec19_Tie.svg" class="h-16" alt="" />
-                 </div>
-                 <div class="slide flex items-center">
-                   <img src="images/Home_Sec19_Orbital.svg" class="h-16" alt="" />
-                 </div>
-                 <div class="slide flex items-center">
-                   <img src="images/Home_Sec19_Jio.svg"class="h-16" alt="" />
-                 </div>
-                   
-                 <div class="slide flex items-center">
-                  <img src="images/Home_Sec19_Sanovi.svg" class="h-16" alt="" />
-                </div>
-                   <div class="slide flex items-center">
-                     <img src="images/Home_Sec19_Happiness.svg" class="h-16" alt="" />
-                   </div>
-                   <div class="slide flex items-center">
-                     <img src="images/Home_Sec19_Tie.svg" class="h-16" alt="" />
-                   </div>
-                   <div class="slide flex items-center">
-                     <img src="images/Home_Sec19_Orbital.svg" class="h-16" alt="" />
-                   </div>
-                   <div class="slide flex items-center">
-                     <img src="images/Home_Sec19_Jio.svg"class="h-16" alt="" />
-                   </div>
-                        
-          </div>
-       
-       </logo-slider>
-     </div>
-   </section>
- </div>
-   
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec19_Happiness.svg" class="h-16" alt="" />
+            </div>
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec19_Tie.svg" class="h-16" alt="" />
+            </div>
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec19_Orbital.svg" class="h-16" alt="" />
+            </div>
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec19_Jio.svg" class="h-16" alt="" />
+            </div>
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec19_Sanovi.svg" class="h-16" alt="" />
+            </div>
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec19_Happiness.svg" class="h-16" alt="" />
+            </div>
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec19_Tie.svg" class="h-16" alt="" />
+            </div>
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec19_Orbital.svg" class="h-16" alt="" />
+            </div>
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec19_Jio.svg" class="h-16" alt="" />
+            </div>
 
-<!--Section 20-->
-<div>
-  <p class="mt-8 text-[#242331] text-5xl md:text-7xl lg:text-7xl text-center font-extrabold nunito ">Get in touch today!</p>
-</div>
-<section class="lg:flex flex-row mx-4">
-   <div class=" flex pt-6  lg:px-8 lg:ml-24 h-24 w-full lg:w-[40%] rounded-2xl border shadow-lg bg-white my-8 lg:mt-12">
-         <img src="images/Home_Sec20_Mail_Icon.svg" alt="" class="h-12 mx-2">
-          <div class="flex justify-between mt-2">
-            <p class="text-[#1B2534] text-lg lg:text-xl font-bold mx-2 ">Mail Us</p>
-            <p class="text-[#797979] text-lg md:ml-32 lg:ml-32">contactus@sclodin.in</p>
-          </div>
-   </div>
-   
-   <div class=" flex pt-6 lg:mt-12 lg:px-8 lg:ml-24 h-24 w-full lg:w-[40%] rounded-2xl border shadow-lg bg-white my-8 ">
-    <img src="images/Home_Sec20_Call_Icon.svg" alt="" class="h-12 mx-2">
-     <div class="flex justify-between mt-2">
-       <p class="text-[#1B2534] text-lg lg:text-xl font-bold mx-2 ">Call Us</p>
-       <p class="text-[#797979] text-lg md:ml-32 lg:ml-44">+91 9342979716</p>
-     </div>
-</div>
-</section>  
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec19_Sanovi.svg" class="h-16" alt="" />
+            </div>
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec19_Happiness.svg" class="h-16" alt="" />
+            </div>
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec19_Tie.svg" class="h-16" alt="" />
+            </div>
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec19_Orbital.svg" class="h-16" alt="" />
+            </div>
+            <div class="slide flex items-center">
+              <img src="images/Home_Sec19_Jio.svg" class="h-16" alt="" />
+            </div>
 
-<!--Section 21-->
-<div class="mt-8 md:text-left flex justify-center mb-8 lg:mt-12 sm:mt-0 ">
-  <div class="h-auto w-full space-y-5 lg:mx-12 mb-4 bg-white border  pt-4 mx-4 rounded-2xl shadow px-4 " >
-      <form class=" "  method="post">
+          </div>
+
+        </logo-slider>
+      </div>
+    </section>
+  </div>
+
+
+  <!--Section 20-->
+  <div>
+    <p class="mt-8 text-[#242331] text-5xl md:text-7xl lg:text-7xl text-center font-extrabold nunito ">Get in touch
+      today!</p>
+  </div>
+  <section class="lg:flex flex-row mx-4">
+    <div
+      class=" flex pt-6  lg:px-8 lg:ml-24 h-24 w-full lg:w-[40%] rounded-2xl border shadow-lg bg-white my-8 lg:mt-12">
+      <img src="images/Home_Sec20_Mail_Icon.svg" alt="" class="h-12 mx-2">
+      <div class="flex justify-between mt-2">
+        <p class="text-[#1B2534] text-lg lg:text-xl font-bold mx-2 ">Mail Us</p>
+        <p class="text-[#797979] text-lg md:ml-32 lg:ml-32">contactus@sclodin.in</p>
+      </div>
+    </div>
+
+    <div
+      class=" flex pt-6 lg:mt-12 lg:px-8 lg:ml-24 h-24 w-full lg:w-[40%] rounded-2xl border shadow-lg bg-white my-8 ">
+      <img src="images/Home_Sec20_Call_Icon.svg" alt="" class="h-12 mx-2">
+      <div class="flex justify-between mt-2">
+        <p class="text-[#1B2534] text-lg lg:text-xl font-bold mx-2 ">Call Us</p>
+        <p class="text-[#797979] text-lg md:ml-32 lg:ml-44">+91 9342979716</p>
+      </div>
+    </div>
+  </section>
+
+  <!--Section 21-->
+  <div class="mt-8 md:text-left flex justify-center mb-8 lg:mt-12 sm:mt-0 ">
+    <div class="h-auto w-full space-y-5 lg:mx-12 mb-4 bg-white border  pt-4 mx-4 rounded-2xl shadow px-4 ">
+      <form class=" " method="post">
         <div class="lg:flex flex-row justify-between">
           <div>
-            <label for="name" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold"
-              >Full Name <b class="">*</b></label
-            >
-            <input
-              type="name"
-              name="name" 
-              placeholder="john david"
-              class=" text-black text-sm border border-[#D3D3D3] rounded-md block w-full lg:w-[35rem] p-2.5"
-              required
-            />
+            <label for="name" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold">Full Name <b
+                class="">*</b></label>
+            <input type="name" name="name" placeholder="john david"
+              class=" text-black text-sm border border-[#D3D3D3] rounded-md block w-full lg:w-[35rem] p-2.5" required />
           </div>
 
-          <div >
-              <label for="name" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold"
-                > Your Email <b class="">*</b></label
-              >
-              <input
-                type="email"
-                name="last name" placeholder="example@yourmail.com"
-                class=" text-black text-sm border border-[#D3D3D3] rounded-md block w-full lg:w-[35rem] p-2.5"
-                required
-              />
-            </div>
+          <div>
+            <label for="name" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold"> Your Email <b
+                class="">*</b></label>
+            <input type="email" name="last name" placeholder="example@yourmail.com"
+              class=" text-black text-sm border border-[#D3D3D3] rounded-md block w-full lg:w-[35rem] p-2.5" required />
           </div>
-          
-          <div class="lg:flex flex-row justify-between">
-            <div>
-              <label for="name" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold"
-                >Company <b class="">*</b></label
-              >
-              <input
-                type="name"
-                name="name" placeholder="yourcompany name here"
-                class=" text-black text-sm border border-[#D3D3D3] rounded-md block w-full lg:w-[35rem] p-2.5"
-                required
-              />
-            </div>
-  
-            <div >
-                <label for="name" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold"
-                  >Subject <b class="">*</b></label
-                >
-                <input
-                  type="email"
-                  name="last name" placeholder="how can we help"
-                  class=" text-black text-sm border border-[#D3D3D3] rounded-md block w-full lg:w-[35rem] p-2.5"
-                  required
-                />
-              </div>
-            </div>
-         
-            <div>
-              <label for="email" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold"
-                >Message <b>*</b></label >
-             <textarea name="message"  class="h-36 text-black text-sm border border-[#D3D3D3] shadow-lg rounded-md block w-full p-2.5" placeholder="hello there,i would like to talk about how to..."></textarea>
-            
-            </div>
-             <div class="mt-4 flex justify-center">
-                  <button class="bg-[#242331] text-white text-2xl font-semibold px-12 py-4  rounded-full mt-8 mb-[-1.5rem]">Send Message</button>
-              </div>
-          
-        </form>
-  </div>
-</div>
+        </div>
 
+        <div class="lg:flex flex-row justify-between">
+          <div>
+            <label for="name" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold">Company <b
+                class="">*</b></label>
+            <input type="name" name="name" placeholder="yourcompany name here"
+              class=" text-black text-sm border border-[#D3D3D3] rounded-md block w-full lg:w-[35rem] p-2.5" required />
+          </div>
 
+          <div>
+            <label for="name" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold">Subject <b
+                class="">*</b></label>
+            <input type="email" name="last name" placeholder="how can we help"
+              class=" text-black text-sm border border-[#D3D3D3] rounded-md block w-full lg:w-[35rem] p-2.5" required />
+          </div>
+        </div>
 
-<!---footer-->
-<footer class="bg-[#2E2E2E] text-white footer-home lg:block md:block hidden" id="footer-blur" >
-  <div class="flex justify-between border-b-2 h-auto">
-    <div class="border-r-2 flex flex-col w-1/4 p-16">
-      <p>Sitemap</p>
-      <ul class="text-[#b8b8b8] my-4 space-y-2">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About </a></li>
-        <li><a href="home.html">Blogs</a></li>
-        <li><a href="carrer.html">Careers</a></li>
-        <li><a href="contactus.html">Contact Us</a></li>
-        <li><a href="carrerSingle.html">Services</a></li>
-      </ul>
-    </div>
+        <div>
+          <label for="email" class="block mb-2 mt-8 text-[#000000] text-xl  font-bold">Message <b>*</b></label>
+          <textarea name="message"
+            class="h-36 text-black text-sm border border-[#D3D3D3] shadow-lg rounded-md block w-full p-2.5"
+            placeholder="hello there,i would like to talk about how to..."></textarea>
 
-    <div class="border-r-2 flex flex-col w-1/4 p-16">
-      <p>Support</p>
-      <ul class="text-[#b8b8b8]  my-4 space-y-2">
-        <li><a href="Disclaimer.html" id="opendispopup">Disclaimer</a></li>
-        <li><a  href="FAQ's.html"id="openfaqpopup">FAQ's</a></li>
-        <li ><a href="privacyPolicy.html" id="openprivacypopup">Privacy Policy</a></li>
-        <li><a  href="T&C.html" id="opentermspopup">Terms & Conditions</a></li>
-      </ul>
-    </div>
+        </div>
+        <div class="mt-4 flex justify-center">
+          <button class="bg-[#242331] text-white text-2xl font-semibold px-12 py-4  rounded-full mt-8 mb-[-1.5rem]">Send
+            Message</button>
+        </div>
 
-    <div class="border-r-2 flex flex-col w-1/4 p-16">
-      <p>Customer Care</p>
-      <ul class="text-[#b8b8b8] my-4 text-sm space-y-2">
-        <li><a >Timings:10AM-6PM (Mon-Sat)</a></li>
-        <li><a>Call: <span> <a href="tel:+919538531818">+91 9483078205/ <br>9342979716</a></span></a></li>
-        <li>
-          <a>Email:<span><a href="mailto:info@pickntrack.com">contactus@SCLOUDIN.in/ <br>
-            sales@SCLOUDIN.in</a></span> </a>
-        </li>
-        <li><a>Address :  SCLOUDIN SLOUTION PVT.LTD. 208, Ittina Mahavir, Nilandari Road Electronic City Phase 1 Banglore 560100, India</a></li>
-      </ul>
-    </div>
-
-    <div class="flex flex-col w-1/4 p-16 ">
-      <div class="space-y-5">
-        <p>Subscribe</p>
-        <p class="text-[#b8b8b8] text-sm">
-          Want to receive amazing updates from SCLODIN?
-        </p>
-        <form 
-        action="/footermail"
-          class="flex justify-between items-center bg-white rounded-full my-10 px-5"
-          method="post"
-        >
-          <img src="images/Footer_email.png" alt="email logo" class="h-5" />
-          <input
-            type="email"
-            placeholder="Enter Your Email"
-            class="bg-transparent w-[100%]  focus:outline-none text-black px-2"
-            name="email"
-            required
-          />
-
-          <p  style="font-weight: bolder; color: black; font-size: x-large;" class="mb-[2px]"><button type="submit">&rarr;</button></p>
-        </form>
-      </div>
-     
+      </form>
     </div>
   </div>
 
-  <div class="p-5 flex  items-center">
-    <ul class="flex gap-2 floats-left pl-12">
-      <li>
-        <a 
-          ><img src="images/Footer_Twitter1.svg" alt="twitter logo" class="w-6"
-        /></a>
-      </li>
-      <li>
-        <a 
-          ><img src="images/Footer_FB1.svg" alt="facebook logo" class="w-6"
-        /></a>
-      </li>
-      <li>
-        <a 
-          ><img src="images/Footer_linkedln1.svg" alt="linkedin logo" class="w-6"
-        /></a>
-      </li>
-      <li>
-        <a 
-          ><img src="images/Footer_IG1.svg" alt="Insta logo" class="w-6"
-        /></a>
-      </li>
-      
-    </ul>
-
-    <p class="text-xs text-center mx-auto">Copyright &copy; 2020 All rights reserved.</p>
-    <div class="flex ">
-    <img src="images/Footer_azadiKaAmritMahotsav.svg" alt="azadi logo" class="w-24 " />
-    <img src="images/Footer_g-20.svg" alt="G20 logo" class="w-16 ml-2" />
-    <img src="images/Footer_startup-india.svg" alt="startup logo" class="ml-2 w-24" />
-    <img src="images/Footer_aatmanirbhar-bharat.svg" alt="bharat logo" class="w-12 ml-2" />
-    <img src="images/Footer_MSME.svg" alt="MSME logo" class="w-12 ml-2" />
-  </div>
-  </div>
-</footer>
 
 
-<!--Footer ends-->
-
-<!-- <footer class="footer-1 bg-black py-8 sm:py-12 mob-footer flex lg:hidden" id="mob-footer-blur"> -->
-<footer class="footer-1 bg-[#2E2E2E] py-8  sm:py-12 flex lg:hidden md:hidden block" id="mob-footer-blur">
-  <div class="container mx-auto px-4">
-    <div class="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
-      <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
-        <h5 class="text-2xl font-bold mb-6 text-white">Sitemap</h5>
-        <ul class="list-none footer-links">
-          <li class="mb-2">
-            <a href="/" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800  text-white">Home</a>
-          </li>
-          <li class="mb-2">
-              <a href="prePlanning.html" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800  text-white">About</a>
-            </li>
-            <li class="mb-2">
-              <a href="/contact" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800  text-white">Blogs</a>
-            </li>
-          <li class="mb-2">
-            <a href="/about" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800  text-white">Careers</a>
-          </li>
-          <li class="mb-2">
-              <a href="/contact" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800  text-white">Contact Us</a>
-            </li>
-            <li class="mb-2">
-              <a href="/contact" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800  text-white">Services</a>
-            </li>
-         
+  <!---footer-->
+  <footer class="bg-[#2E2E2E] text-white footer-home lg:block md:block hidden" id="footer-blur">
+    <div class="flex justify-between border-b-2 h-auto">
+      <div class="border-r-2 flex flex-col w-1/4 p-16">
+        <p>Sitemap</p>
+        <ul class="text-[#b8b8b8] my-4 space-y-2">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About </a></li>
+          <li><a href="home.html">Blogs</a></li>
+          <li><a href="carrer.html">Careers</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+          <li><a href="carrerSingle.html">Services</a></li>
         </ul>
       </div>
-      <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 sm:mt-0">
-        <h5 class="text-2xl font-bold mb-6  text-white">Support</h5>
-        <ul class="list-none footer-links">
-        
-            <li class="mb-2">
-              <a href="Disclaimer.html" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800  text-white" id="openmobdispopup">Disclaimer</a>
-            </li>
-            
-          <li class="mb-2">
-            <a href="FAQ's.html" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800  text-white" id="openmobfaqpopup">FAQ's</a>
-          </li>
-          <li class="mb-2">
-            <a href="privacyPolicy.html" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800  text-white" id="openmobprivacypopup">Privacy Policy</a>
-          </li>
-          <li class="mb-2">
-            <a href="T&C.html" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800  text-white" id="openmobtermspopup">Terms & Conditions</a>
-          </li>
+
+      <div class="border-r-2 flex flex-col w-1/4 p-16">
+        <p>Support</p>
+        <ul class="text-[#b8b8b8]  my-4 space-y-2">
+          <li><a href="Disclaimer.html" id="opendispopup">Disclaimer</a></li>
+          <li><a href="FAQ's.html" id="openfaqpopup">FAQ's</a></li>
+          <li><a href="privacyPolicy.html" id="openprivacypopup">Privacy Policy</a></li>
+          <li><a href="T&C.html" id="opentermspopup">Terms & Conditions</a></li>
         </ul>
       </div>
-      <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
-        <h5 class="text-2xl font-bold mb-6  text-white">Customer Care</h5>
-        <ul class="list-none footer-links">
-          <li class="mb-2">
-            <a  class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800 text-white">Timings: 10AM-6PM (Mon-Sat)</a>
+
+      <div class="border-r-2 flex flex-col w-1/4 p-16">
+        <p>Customer Care</p>
+        <ul class="text-[#b8b8b8] my-4 text-sm space-y-2">
+          <li><a>Timings:10AM-6PM (Mon-Sat)</a></li>
+          <li><a>Call: <span> <a href="tel:+919538531818">+91 9483078205/ <br>9342979716</a></span></a></li>
+          <li>
+            <a>Email:<span><a href="mailto:info@pickntrack.com">contactus@SCLOUDIN.in/ <br>
+                  sales@SCLOUDIN.in</a></span> </a>
           </li>
-          <li class="mb-2">
-            <a  href="tel:9538531818" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800 text-white">Call: +91 9483078205/ <br> 9342979716</a>
-          </li>
-          <li class="mb-2">
-            <a href="mailto:pickntrack@gmail.com" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800 text-white">Email: contactus@SCLOUDIN.in/ <br>
-              sales@SCLOUDIN.in</a>
-          </li>
-          <li class="mb-2">
-            <a href="" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800 text-white">Address :  SCLOUDIN SLOUTION PVT.LTD. 208, Ittina Mahavir, Nilandari Road Electronic City Phase 1 Banglore 560100, India</a>
-          </li>
+          <li><a>Address : SCLOUDIN SLOUTION PVT.LTD. 208, Ittina Mahavir, Nilandari Road Electronic City Phase 1
+              Banglore 560100, India</a></li>
         </ul>
       </div>
-      <div class="px-4 sm:w-1/2  md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
-        <h5 class="text-2xl font-bold mb-6 text-white">Subscribe</h5>
-        <ul class="list-none footer-links">
-          <li class="mb-2">
-            <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800 text-white">Want to receive amazing updates <br> from SCLODIN?</a>
-          </li>
-          
-          <form class="flex h-12 w-full justify-between items-center bg-slate-200 rounded-full  my-10" method="post" action="/footer">
-          <img src="images/Footer_email.png" alt="email logo" class="h-5 ml-[10px] " />
-          <input type="email" placeholder="Enter your email " name="email" class="bg-transparent w-[100%] mr-[12px] focus:outline-none mx-5 text-sm" required />
-          <p class="text-black text-xl mr-5"><button type="submit">&rarr;</button></p>
+
+      <div class="flex flex-col w-1/4 p-16 ">
+        <div class="space-y-5">
+          <p>Subscribe</p>
+          <p class="text-[#b8b8b8] text-sm">
+            Want to receive amazing updates from SCLODIN?
+          </p>
+          <form action="/footermail" class="flex justify-between items-center bg-white rounded-full my-10 px-5"
+            method="post">
+            <img src="images/Footer_email.png" alt="email logo" class="h-5" />
+            <input type="email" placeholder="Enter Your Email"
+              class="bg-transparent w-[100%]  focus:outline-none text-black px-2" name="email" required />
+
+            <p style="font-weight: bolder; color: black; font-size: x-large;" class="mb-[2px]"><button
+                type="submit">&rarr;</button></p>
           </form>
+        </div>
 
-
-             
-        </ul>
       </div>
-    
     </div>
 
-    <div class="sm:flex sm:flex-wrap sm:-mx-4 mt-6 pt-6 sm:mt-12 sm:pt-12 border-t object-center">
-      <div class="sm:w-full px-4 md:w-1/6">
-        <strong class="justify-center">
-          <ul class="flex gap-2 ">
-            <li>
-              <a 
-                ><img src="images/Footer_twitter.png" alt="twitter logo" class="w-6"
-              /></a>
+    <div class="p-5 flex  items-center">
+      <ul class="flex gap-2 floats-left pl-12">
+        <li>
+          <a><img src="images/Footer_Twitter1.svg" alt="twitter logo" class="w-6" /></a>
+        </li>
+        <li>
+          <a><img src="images/Footer_FB1.svg" alt="facebook logo" class="w-6" /></a>
+        </li>
+        <li>
+          <a><img src="images/Footer_linkedln1.svg" alt="linkedin logo" class="w-6" /></a>
+        </li>
+        <li>
+          <a><img src="images/Footer_IG1.svg" alt="Insta logo" class="w-6" /></a>
+        </li>
+
+      </ul>
+
+      <p class="text-xs text-center mx-auto">Copyright &copy; 2020 All rights reserved.</p>
+      <div class="flex ">
+        <img src="images/Footer_azadiKaAmritMahotsav.svg" alt="azadi logo" class="w-24 " />
+        <img src="images/Footer_g-20.svg" alt="G20 logo" class="w-16 ml-2" />
+        <img src="images/Footer_startup-india.svg" alt="startup logo" class="ml-2 w-24" />
+        <img src="images/Footer_aatmanirbhar-bharat.svg" alt="bharat logo" class="w-12 ml-2" />
+        <img src="images/Footer_MSME.svg" alt="MSME logo" class="w-12 ml-2" />
+      </div>
+    </div>
+  </footer>
+
+
+  <!--Footer ends-->
+
+  <!-- <footer class="footer-1 bg-black py-8 sm:py-12 mob-footer flex lg:hidden" id="mob-footer-blur"> -->
+  <footer class="footer-1 bg-[#2E2E2E] py-8  sm:py-12 flex lg:hidden md:hidden block" id="mob-footer-blur">
+    <div class="container mx-auto px-4">
+      <div class="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
+        <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
+          <h5 class="text-2xl font-bold mb-6 text-white">Sitemap</h5>
+          <ul class="list-none footer-links">
+            <li class="mb-2">
+              <a href="/"
+                class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800  text-white">Home</a>
             </li>
-            <li>
-              <a 
-                ><img src="images/Footer_FB.png" alt="facebook logo" class="w-3"
-              /></a>
+            <li class="mb-2">
+              <a href="prePlanning.html"
+                class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800  text-white">About</a>
             </li>
-            <li>
-              <a 
-                ><img src="images/Footer_linkedln1.svg" alt="linkedin logo" class="w-6"
-              /></a>
+            <li class="mb-2">
+              <a href="/contact"
+                class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800  text-white">Blogs</a>
             </li>
-            <li>
-              <a
-                ><img src="images/Footer_IG1.svg" alt="youtube logo" class="w-6"
-              /></a>
+            <li class="mb-2">
+              <a href="/about"
+                class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800  text-white">Careers</a>
+            </li>
+            <li class="mb-2">
+              <a href="/contact"
+                class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800  text-white">Contact
+                Us</a>
+            </li>
+            <li class="mb-2">
+              <a href="/contact"
+                class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800  text-white">Services</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 sm:mt-0">
+          <h5 class="text-2xl font-bold mb-6  text-white">Support</h5>
+          <ul class="list-none footer-links">
+
+            <li class="mb-2">
+              <a href="Disclaimer.html"
+                class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800  text-white"
+                id="openmobdispopup">Disclaimer</a>
+            </li>
+
+            <li class="mb-2">
+              <a href="FAQ's.html"
+                class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800  text-white"
+                id="openmobfaqpopup">FAQ's</a>
+            </li>
+            <li class="mb-2">
+              <a href="privacyPolicy.html"
+                class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800  text-white"
+                id="openmobprivacypopup">Privacy Policy</a>
+            </li>
+            <li class="mb-2">
+              <a href="T&C.html"
+                class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800  text-white"
+                id="openmobtermspopup">Terms & Conditions</a>
             </li>
           </ul>
-        </strong>
+        </div>
+        <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+          <h5 class="text-2xl font-bold mb-6  text-white">Customer Care</h5>
+          <ul class="list-none footer-links">
+            <li class="mb-2">
+              <a
+                class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800 text-white">Timings:
+                10AM-6PM (Mon-Sat)</a>
+            </li>
+            <li class="mb-2">
+              <a href="tel:9538531818"
+                class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800 text-white">Call:
+                +91 9483078205/ <br> 9342979716</a>
+            </li>
+            <li class="mb-2">
+              <a href="mailto:pickntrack@gmail.com"
+                class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800 text-white">Email:
+                contactus@SCLOUDIN.in/ <br>
+                sales@SCLOUDIN.in</a>
+            </li>
+            <li class="mb-2">
+              <a href=""
+                class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800 text-white">Address
+                : SCLOUDIN SLOUTION PVT.LTD. 208, Ittina Mahavir, Nilandari Road Electronic City Phase 1 Banglore
+                560100, India</a>
+            </li>
+          </ul>
+        </div>
+        <div class="px-4 sm:w-1/2  md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+          <h5 class="text-2xl font-bold mb-6 text-white">Subscribe</h5>
+          <ul class="list-none footer-links">
+            <li class="mb-2">
+              <a href="#"
+                class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800 text-white">Want
+                to receive amazing updates <br> from SCLODIN?</a>
+            </li>
+
+            <form class="flex h-12 w-full justify-between items-center bg-slate-200 rounded-full  my-10" method="post"
+              action="/footer">
+              <img src="images/Footer_email.png" alt="email logo" class="h-5 ml-[10px] " />
+              <input type="email" placeholder="Enter your email " name="email"
+                class="bg-transparent w-[100%] mr-[12px] focus:outline-none mx-5 text-sm" required />
+              <p class="text-black text-xl mr-5"><button type="submit">&rarr;</button></p>
+            </form>
+
+
+
+          </ul>
+        </div>
+
       </div>
-      <div class="px-4 sm:w-1/2 md:w-1/4 mt-4 md:mt-0">
-        <h6 class="font-bold mb-2 text-center text-white"><br>  Copyright © 2020 All rights reserved.</h6>
-        <address class="not-italic mb-4 text-sm">
-         .<br>
-         <div class="flex float-right mt-4">
-        <img src="images/Footer_azadiKaAmritMahotsav.svg"  alt="" class="mx-2">
-        <img src="images/Footer_g-20.svg"  alt="" class="ml-2">
-        <img src="images/Footer_startup-india.svg"  alt="" class="ml-2">
-        <img src="images/Footer_aatmanirbhar-bharat.svg"  alt="" class="ml-2">
-        <img src="images/Footer_MSME.svg"  alt="" class="ml-2">
+
+      <div class="sm:flex sm:flex-wrap sm:-mx-4 mt-6 pt-6 sm:mt-12 sm:pt-12 border-t object-center">
+        <div class="sm:w-full px-4 md:w-1/6">
+          <strong class="justify-center">
+            <ul class="flex gap-2 ">
+              <li>
+                <a><img src="images/Footer_twitter.png" alt="twitter logo" class="w-6" /></a>
+              </li>
+              <li>
+                <a><img src="images/Footer_FB.png" alt="facebook logo" class="w-3" /></a>
+              </li>
+              <li>
+                <a><img src="images/Footer_linkedln1.svg" alt="linkedin logo" class="w-6" /></a>
+              </li>
+              <li>
+                <a><img src="images/Footer_IG1.svg" alt="youtube logo" class="w-6" /></a>
+              </li>
+            </ul>
+          </strong>
+        </div>
+        <div class="px-4 sm:w-1/2 md:w-1/4 mt-4 md:mt-0">
+          <h6 class="font-bold mb-2 text-center text-white"><br> Copyright © 2020 All rights reserved.</h6>
+          <address class="not-italic mb-4 text-sm">
+            .<br>
+            <div class="flex float-right mt-4">
+              <img src="images/Footer_azadiKaAmritMahotsav.svg" alt="" class="mx-2">
+              <img src="images/Footer_g-20.svg" alt="" class="ml-2">
+              <img src="images/Footer_startup-india.svg" alt="" class="ml-2">
+              <img src="images/Footer_aatmanirbhar-bharat.svg" alt="" class="ml-2">
+              <img src="images/Footer_MSME.svg" alt="" class="ml-2">
+            </div>
+          </address>
+        </div>
+
+
       </div>
-        </address>
-      </div>
-     
-      
     </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
-</html>
 
+</html>
